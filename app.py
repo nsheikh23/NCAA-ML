@@ -9,12 +9,12 @@ def index():
     return render_template("index.html")
 
 @app.route('/NBA')
-def get_all(NBA):
-    return jsonify(aws_controller.get_all())
+def NBA():
+    return jsonify(aws_controller.get_all("NBA"))
 
 @app.route('/NFL')
-def get_all(NFL):
-    return jsonify(aws_controller.get_all())
+def NFL():
+    return jsonify(aws_controller.get_all("NFL"))
 
 # @app.route('/do_items/')
 # def do_items():

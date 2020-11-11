@@ -1,12 +1,13 @@
 import psycopg2
+import boto3
 
 # Setting up Amazon RDS DB connection
 conn = psycopg2.connect(
-    host = "ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com".host,
-    port = "5432".port,
-    user = "postgres".user,
-    password = "group1final".password,
-    db = "NCAA_Athletics".db
+    host = "ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com",
+    port = 5432,
+    user = "postgres",
+    password = "group1final",
+    db = "NCAA_Athletics"
 )
 
 
