@@ -16,19 +16,5 @@ def NBA():
 def NFL():
     return jsonify(aws_controller.get_all("NFL"))
 
-# @app.route('/do_items/')
-# def do_items():
-#     response=aws_controller.create_table()
-#     return response
-
-# @app.route('/do_items')
-# def do_items(table):
-#     response=aws_controller.create_table(table)
-#     return response
-
-# @app.route('/get-items/')
-# def get_items():
-#     return jsonify(aws_controller.get_item())
-
 if __name__ == '__main__':
     app.run(debug=True)
