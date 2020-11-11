@@ -13,6 +13,6 @@ conn = psycopg2.connect(
 # This function will return all rows from the table in the table requested
 def get_all(table):
     cur=conn.cursor()
-    cur.execute("SELECT * FROM {table}")
+    cur.execute(f"SELECT * FROM {table}")
     details = cur.fetchall()
     return details

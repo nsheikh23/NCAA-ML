@@ -8,8 +8,12 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/gatherData')
-def get_all():
+@app.route('/NBA')
+def get_all(NBA):
+    return jsonify(aws_controller.get_all())
+
+@app.route('/NFL')
+def get_all(NFL):
     return jsonify(aws_controller.get_all())
 
 # @app.route('/do_items/')
