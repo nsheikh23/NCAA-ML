@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for, jsonify
-import SQLAlchemy
+import sqlalchemy
 from markupsafe import escape
 from bson.json_util import dumps
 import aws_controller as db
@@ -37,7 +37,7 @@ def NFL():
 with app.test_request_context():
     print(url_for('NBA'))
     print(url_for('NFL'))
-    print(url_for('profile', username="Duke"))
+    # print(url_for('profile', username="Duke"))
 
 if __name__ == '__main__':
     app.run(debug=True)

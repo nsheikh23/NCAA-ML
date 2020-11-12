@@ -7,7 +7,7 @@ conn = psycopg2.connect(
     port = 5432,
     user = "postgres",
     password = "group1final",
-    db = "NCAA_Athletics"
+    dbname = "NCAA_Athletics"
 )
 
 
