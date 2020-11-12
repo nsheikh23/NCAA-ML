@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request, url_for, jsonify
+import SQLAlchemy
 from markupsafe import escape
 from bson.json_util import dumps
 import aws_controller as db
 
 app = Flask(__name__)
+# app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:group1final@ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com/NCAA_Athletics"
+# db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
