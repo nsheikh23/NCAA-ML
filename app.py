@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for, jsonify
 # import sqlalchemy
 # from markupsafe import escape
 # from bson.json_util import dumps
-import aws_controller as db
+import rdsconnection as db
 
 app = Flask(__name__, template_folder="template")
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:group1final@ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com/NCAA_Athletics"
