@@ -18,23 +18,23 @@ def NBA():
     print(details)
     # Need to get all players into dictionary form
     # var = {}
-    for detail in details:
-        var = detail
+    # for detail in details:
+        # var = detail
     #     var['pick'] = detail[0]
     #     var['team'] = detail[1]
     #     var['player'] = detail[2]
     #     var['position'] = detail[3]
-    return render_template('index.html', var=var)
-    # return jsonify(aws_controller.get_all("NBA"))
+    # return render_template('index.html', var=var)
+    return jsonify(details)
 
 @app.route('/NFL')
 def NFL():
     details = db.get_all("NFL")
     print(details)
-    for detail in details:
-        var = detail
-    return render_template('index.html', var=var)
-    # return jsonify(aws_controller.get_all("NFL"))
+    # for detail in details:
+    #     var = detail
+    # return render_template('index.html', var=var)
+    return jsonify(details)
 
 # @app.route('/School/<schoolname>')
 # def profile(schoolname):

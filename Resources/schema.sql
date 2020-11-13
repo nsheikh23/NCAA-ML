@@ -35,3 +35,12 @@ CREATE TABLE NFL (
     Sk FLOAT,
     School VARCHAR
 );
+
+CREATE TABLE schools (
+    School VARCHAR,
+    Latitude VARCHAR,
+    Longitude VARCHAR,
+    Revenue VARCHAR,
+    Expense VARCHAR,
+    Sports VARCHAR
+);
