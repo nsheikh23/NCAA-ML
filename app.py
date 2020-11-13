@@ -4,7 +4,7 @@ from markupsafe import escape
 from bson.json_util import dumps
 import aws_controller as db
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="template")
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:group1final@ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com/NCAA_Athletics"
 # db = SQLAlchemy(app)
 
@@ -16,8 +16,14 @@ def index():
 def NBA():
     details = db.get_all("NBA")
     print(details)
+    # Need to get all players into dictionary form
+    # var = {}
     for detail in details:
         var = detail
+    #     var['pick'] = detail[0]
+    #     var['team'] = detail[1]
+    #     var['player'] = detail[2]
+    #     var['position'] = detail[3]
     return render_template('index.html', var=var)
     # return jsonify(aws_controller.get_all("NBA"))
 
