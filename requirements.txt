@@ -1,0 +1,5 @@
+flask
+zappa
+boto3
+aws-psycopg2
+psycopg2-binary

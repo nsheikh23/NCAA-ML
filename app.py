@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for, jsonify
-import sqlalchemy
-from markupsafe import escape
-from bson.json_util import dumps
+# import sqlalchemy
+# from markupsafe import escape
+# from bson.json_util import dumps
 import aws_controller as db
 
 app = Flask(__name__, template_folder="template")
@@ -36,9 +36,9 @@ def NFL():
     # return render_template('index.html', var=var)
     return jsonify(details)
 
-# @app.route('/School/<schoolname>')
-# def profile(schoolname):
-#     return '{}\'s profile'.format(escape(schoolname))
+# # @app.route('/School/<schoolname>')
+# # def profile(schoolname):
+# #     return '{}\'s profile'.format(escape(schoolname))
 
 with app.test_request_context():
     print(url_for('NBA'))

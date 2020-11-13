@@ -40,6 +40,7 @@ CREATE TABLE schools (
     School VARCHAR,
     Latitude VARCHAR,
     Longitude VARCHAR,
+    State VARCHAR,
     Revenue VARCHAR,
     Expense VARCHAR,
     Sports VARCHAR
