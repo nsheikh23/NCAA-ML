@@ -1,6 +1,6 @@
 CREATE TABLE NBAdraft (
     Pick INTEGER,
-    Player VARCHAR,
+    Name VARCHAR,
     Conference VARCHAR,
     College VARCHAR
 );
@@ -34,31 +34,13 @@ CREATE TABLE NFL (
     DraftYear INTEGER,
     Rnd INTEGER,
     Pick INTEGER,
-    Tm VARCHAR,
+    Team VARCHAR,
     Player VARCHAR,
-    Age INTEGER,
-    To INTEGER,
-    AP1 INTEGER,
-    PB INTEGER,
-    St INTEGER,
-    CarAV INTEGER,
-    DrAV INTEGER,
-    G INTEGER,
-    Cmp INTEGER,
-    Att15 INTEGER,
-    Yds16 INTEGER,
-    TD17 INTEGER,
-    Int18 INTEGER,
-    Att19 INTEGER,
-    Yds20 INTEGER,
-    TD21 INTEGER,
-    Rec INTEGER,
-    Yds23 INTEGER,
-    TD24 INTEGER,
-    Solo INTEGER,
-    Int26 INTEGER,
-    Sk FLOAT,
-    School VARCHAR
+    GradeFileID VARCHAR,
+    Position VARCHAR,
+    College VARCHAR,
+    CollegeBudgetFileName VARCHAR,
+    Conference VARCHAR
 );
 
 CREATE TABLE schools (
