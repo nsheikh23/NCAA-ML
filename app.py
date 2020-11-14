@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, url_for, jsonify
 # from bson.json_util import dumps
 import rdsconnection as db
 
-app = Flask(__name__, template_folder="")
+app = Flask(__name__, template_folder="Project3_HTML")
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:group1final@ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com/NCAA_Athletics"
 # db = SQLAlchemy(app)
 
