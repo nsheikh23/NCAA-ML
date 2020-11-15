@@ -30,7 +30,40 @@ CREATE TABLE BballStats (
     PPG FLOAT
 );
 
-CREATE TABLE NFL (
+CREATE TABLE Basketball (
+    Player VARCHAR,
+    Team VARCHAR,
+    GP INTEGER,
+    MPG FLOAT,
+    FGM FLOAT,
+    FGA FLOAT,
+    FG_pct FLOAT,
+    ThreePM FLOAT,
+    ThreePA FLOAT,
+    Three_pct FLOAT,
+    FTM FLOAT,
+    FTA FLOAT,
+    FT_pct FLOAT,
+    TOV FLOAT,
+    PF FLOAT,
+    ORB FLOAT,
+    DRB FLOAT,
+    RPG FLOAT,
+    APG FLOAT,
+    SPG FLOAT,
+    BPG FLOAT,
+    PPG FLOAT,
+    Pick INTEGER,
+    Conference VARCHAR,
+    College VARCHAR,
+    CollegeBudgetFile VARCHAR,
+    Latitude FLOAT,
+    Longitude FLOAT,
+    Expense INTEGER,
+    Revenue INTEGER
+)
+
+CREATE TABLE Football (
     DraftYear INTEGER,
     Rnd INTEGER,
     Pick INTEGER,
@@ -40,7 +73,11 @@ CREATE TABLE NFL (
     Position VARCHAR,
     College VARCHAR,
     CollegeBudgetFileName VARCHAR,
-    Conference VARCHAR
+    Conference VARCHAR,
+    Latitude FLOAT,
+    Longitude FLOAT,
+    Expense INTEGER,
+    Revenue INTEGER
 );
 
 CREATE TABLE schools (
