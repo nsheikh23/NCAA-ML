@@ -5,7 +5,7 @@ from flask_bootstrap import Bootstrap
 # from bson.json_util import dumps
 import rdsconnection as db
 
-app = Flask(__name__, template_folder="Project3_HTML")
+app = Flask(__name__, template_folder="templates")
 bootstrap = Bootstrap(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://postgres:group1final@ncaa-athletics.cr5bt5kg46tf.us-west-1.rds.amazonaws.com/NCAA_Athletics"
 # db = SQLAlchemy(app)

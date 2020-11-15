@@ -1,0 +1,509 @@
+School,Latitude,Longitude,State,REV_MEN,EXP_MEN,Sports
+Alabama State University,32.3651836,-86.2957213,AL,992694,992694,Basketball
+Alabama State University,32.3651836,-86.2957213,AL,3622267,3622267,Football
+Albany State University,31.5734365,-84.1425655,GA,88125,255918,Basketball
+Albany State University,31.5734365,-84.1425655,GA,229371,1160234,Football
+Appalachian State University,36.2109506,-81.6777048,NC,1952593,1952593,Basketball
+Appalachian State University,36.2109506,-81.6777048,NC,9365952,9365952,Football
+Arizona State University-Tempe,33.4219437,-111.9400636,AZ,10609465,8349598,Basketball
+Arizona State University-Tempe,33.4219437,-111.9400636,AZ,39007842,26245544,Football
+Arkansas State University-Main Campus,35.8414567,-90.6806034,AR,1578156,1578156,Basketball
+Arkansas State University-Main Campus,35.8414567,-90.6806034,AR,7789945,7789945,Football
+Ashland University,40.8614368,-82.3228059,OH,601260,601260,Basketball
+Ashland University,40.8614368,-82.3228059,OH,2018271,2018271,Football
+Assumption College,42.2922426,-71.8291624,MA,808273,771218,Basketball
+Assumption College,42.2922426,-71.8291624,MA,1114929,1058325,Football
+Auburn University,32.5909562,-85.4929785,AL,15593947,10536653,Basketball
+Auburn University,32.5909562,-85.4929785,AL,95157216,47846261,Football
+Augustana University,43.525073,-96.73698,SD,809276,809276,Basketball
+Augustana University,43.525073,-96.73698,SD,2146448,2146448,Football
+Ball State University,40.1999048,-85.4115988,IN,1975432,1975432,Basketball
+Ball State University,40.1999048,-85.4115988,IN,7135305,7135305,Football
+Baylor University,31.5447753,-97.1182662,TX,9860432,9860432,Basketball
+Baylor University,31.5447753,-97.1182662,TX,45580767,30995620,Football
+Belmont University,36.1336191,-86.7939242,TN,5129856,5129856,Basketball
+Beloit College,42.5030333,-89.0309048,WI,140982,140982,Basketball
+Beloit College,42.5030333,-89.0309048,WI,303857,303857,Football
+Bemidji State University,47.4826372,-94.8746802,MN,433499,433499,Basketball
+Bemidji State University,47.4826372,-94.8746802,MN,966491,966491,Football
+Bloomsburg University of Pennsylvania,41.0079402,-76.4472892,PA,305959,305959,Basketball
+Bloomsburg University of Pennsylvania,41.0079402,-76.4472892,PA,1010812,984303,Football
+Boise State University,43.609316,-116.2108121,ID,5146160,3678140,Basketball
+Boise State University,43.609316,-116.2108121,ID,20281713,14600947,Football
+Boston College,42.3355488,-71.1684945,MA,7225974,6872835,Basketball
+Boston College,42.3355488,-71.1684945,MA,32347820,24855252,Football
+Bowling Green State University-Main Campus,41.3754425,-83.640953,OH,2544177,2544177,Basketball
+Bowling Green State University-Main Campus,41.3754425,-83.640953,OH,7750248,7750248,Football
+Brigham Young University-Provo,40.2524308,-111.6502622,UT,7447430,7447430,Basketball
+Brigham Young University-Provo,40.2524308,-111.6502622,UT,23171603,21180680,Football
+Bucknell University,40.9547722,-76.8850759,PA,2624075,2624075,Basketball
+Bucknell University,40.9547722,-76.8850759,PA,6192470,6192470,Football
+Butler University,39.8381669,-86.1705391,IN,8228482,5760815,Basketball
+Butler University,39.8381669,-86.1705391,IN,1048440,1068454,Football
+California Polytechnic State University-San Luis Obispo,35.3011339,-120.658758,CA,2181492,2181492,Basketball
+California Polytechnic State University-San Luis Obispo,35.3011339,-120.658758,CA,4546931,4546931,Football
+California State University-Fresno,36.8108284,-119.7462226,CA,3642878,3642878,Basketball
+California State University-Fresno,36.8108284,-119.7462226,CA,16419529,16419529,Football
+California State University-Long Beach,33.7826983,-118.1223045,CA,2412791,2412791,Basketball
+California State University-Sacramento,38.5642453,-121.4252955,CA,1667359,1667359,Basketball
+California State University-Sacramento,38.5642453,-121.4252955,CA,5515779,5515779,Football
+California University of Pennsylvania,40.0632191,-79.8842393,PA,413474,413474,Basketball
+California University of Pennsylvania,40.0632191,-79.8842393,PA,1431566,1431566,Football
+Campbell University,35.4091517,-78.7382773,NC,2085183,2085182,Basketball
+Campbell University,35.4091517,-78.7382773,NC,5355777,5355780,Football
+Canisius College,42.9272065,-78.8528401,NY,1639094,1639094,Basketball
+Carson-Newman University,36.1223377,-83.4908561,TN,708149,597952,Basketball
+Carson-Newman University,36.1223377,-83.4908561,TN,2059462,1853611,Football
+Central Michigan University,43.5911786,-84.7753308,MI,2168814,2168814,Basketball
+Central Michigan University,43.5911786,-84.7753308,MI,8175068,8175068,Football
+Citadel Military College of South Carolina,32.7975896,-79.9589578,SC,1613769,1477703,Basketball
+Citadel Military College of South Carolina,32.7975896,-79.9589578,SC,5728787,4903580,Football
+Clemson University,34.679339,-82.835136,SC,9224524,8229736,Basketball
+Clemson University,34.679339,-82.835136,SC,61378516,55649888,Football
+Coastal Carolina University,33.795026,-79.011802,SC,2243214,2243214,Basketball
+Coastal Carolina University,33.795026,-79.011802,SC,9227648,9227648,Football
+College of Charleston,32.7834631,-79.9372833,SC,3289426,3289426,Basketball
+College of the Holy Cross,42.2392391,-71.8079608,MA,2282921,2282921,Basketball
+College of the Holy Cross,42.2392391,-71.8079608,MA,5605872,5605872,Football
+College of William and Mary,37.271949,-76.709328,VA,3970949,3970949,Basketball
+College of William and Mary,37.271949,-76.709328,VA,7073588,7073588,Football
+Colorado State University-Fort Collins,40.5757036,-105.0941044,CO,4415218,4415218,Basketball
+Colorado State University-Fort Collins,40.5757036,-105.0941044,CO,24782902,24782902,Football
+Colorado State University-Pueblo,38.3060152,-104.579911,CO,447132,447132,Basketball
+Colorado State University-Pueblo,38.3060152,-104.579911,CO,2025577,2025577,Football
+Concordia College at Moorhead,46.8648964,-96.770366,MN,139633,139633,Basketball
+Concordia College at Moorhead,46.8648964,-96.770366,MN,503296,503296,Football
+Cornell College,41.9245718,-91.4237652,IA,144366,144366,Basketball
+Cornell College,41.9245718,-91.4237652,IA,350718,350718,Football
+Creighton University,41.2655878,-95.9486026,NE,8590055,8590055,Basketball
+Davidson College,35.499519,-80.847593,NC,3476469,3297453,Basketball
+Davidson College,35.499519,-80.847593,NC,1803457,1746425,Football
+DePaul University,41.8781342,-87.6271172,IL,6793520,6793520,Basketball
+Duke University,36.0014258,-78.9382286,NC,35489891,22178473,Basketball
+Duke University,36.0014258,-78.9382286,NC,40328603,28806459,Football
+East Carolina University,35.6066409,-77.3559964,NC,3945332,3942406,Basketball
+East Carolina University,35.6066409,-77.3559964,NC,14136043,14094264,Football
+East Central University,34.7728483,-96.6598029,OK,371852,356405,Basketball
+East Central University,34.7728483,-96.6598029,OK,1025735,980162,Football
+Eastern Illinois University,39.4780297,-88.1759056,IL,1146676,1146676,Basketball
+Eastern Illinois University,39.4780297,-88.1759056,IL,2971448,2971448,Football
+Eastern Kentucky University,37.7382655,-84.2983539,KY,1576265,1576265,Basketball
+Eastern Kentucky University,37.7382655,-84.2983539,KY,4163865,4163865,Football
+Eastern Michigan University,42.2466866,-83.6225079,MI,2170870,2170870,Basketball
+Eastern Michigan University,42.2466866,-83.6225079,MI,8770408,8770408,Football
+Eastern Washington University,47.4901128,-117.5797878,WA,1630809,1630808,Basketball
+Eastern Washington University,47.4901128,-117.5797878,WA,6739277,6739278,Football
+Elon University,36.1048942,-79.5045112,NC,3221829,3221829,Basketball
+Elon University,36.1048942,-79.5045112,NC,6043145,6043145,Football
+Ferris State University,43.6844327,-85.4820277,MI,853565,654990,Basketball
+Ferris State University,43.6844327,-85.4820277,MI,2323872,2114843,Football
+Florida Atlantic University,26.3693119,-80.1058477,FL,2352069,2352069,Basketball
+Florida Atlantic University,26.3693119,-80.1058477,FL,11877533,11877533,Football
+Florida Gulf Coast University,26.4616473,-81.7715464,FL,1589474,1589474,Basketball
+Florida International University,25.7567674,-80.3820014,FL,2004600,1951680,Basketball
+Florida International University,25.7567674,-80.3820014,FL,14200561,11771431,Football
+Florida State University,30.4404775,-84.2908283,FL,16773013,16773013,Basketball
+Florida State University,30.4404775,-84.2908283,FL,68893857,68893857,Football
+Fordham University,40.8620281,-73.8854257,NY,5075355,5075355,Basketball
+Fordham University,40.8620281,-73.8854257,NY,7594200,7594200,Football
+Fort Hays State University,38.8731404,-99.3402104,KS,551942,478626,Basketball
+Fort Hays State University,38.8731404,-99.3402104,KS,1868986,1739181,Football
+Furman,34.9279032,-82.4314732,SC,2576740,2293070,Basketball
+Furman,34.9279032,-82.4314732,SC,7366155,6808128,Football
+George Washington University,38.9009637,-77.0476606,DC,3548937,3548937,Basketball
+Georgetown University,38.9076192,-77.0716128,DC,13573946,13573946,Basketball
+Georgetown University,38.9076192,-77.0716128,DC,2349037,2349037,Football
+Georgia Institute of Technology-Main Campus,33.7724173,-84.3947916,GA,6910271,7095493,Basketball
+Georgia Institute of Technology-Main Campus,33.7724173,-84.3947916,GA,42553892,29744089,Football
+Georgia Southern University,32.4286684,-81.7822479,GA,1505129,1505129,Basketball
+Georgia Southern University,32.4286684,-81.7822479,GA,6123720,6123720,Football
+Georgia State University,33.7534327,-84.3859072,GA,2917278,2917278,Basketball
+Georgia State University,33.7534327,-84.3859072,GA,8267631,8267631,Football
+Gonzaga University,47.6664473,-117.4015208,WA,16147924,10496251,Basketball
+Grambling State University,32.5221156,-92.7145047,LA,913266,913266,Basketball
+Grambling State University,32.5221156,-92.7145047,LA,3329390,3329390,Football
+Grand Valley State University,42.9629773,-85.8921123,MI,747271,763868,Basketball
+Grand Valley State University,42.9629773,-85.8921123,MI,3360909,3136132,Football
+Harvard University,42.3748649,-71.1181752,MA,1474941,1474941,Basketball
+Harvard University,42.3748649,-71.1181752,MA,3163293,3163293,Football
+Hobart William Smith Colleges,42.858059,-76.9843327,NY,294832,294832,Basketball
+Hobart William Smith Colleges,42.858059,-76.9843327,NY,560632,560632,Football
+Hofstra University,40.7166872,-73.5993965,NY,2939154,2939154,Basketball
+Humboldt State University,40.8744392,-124.0790979,CA,599014,599014,Basketball
+Humboldt State University,40.8744392,-124.0790979,CA,719826,719826,Football
+Idaho State University,42.8627836,-112.429762,ID,1461637,1461637,Basketball
+Idaho State University,42.8627836,-112.429762,ID,3993358,3993358,Football
+Illinois State University,40.52355,-88.9899395,IL,2440752,2440752,Basketball
+Illinois State University,40.52355,-88.9899395,IL,4429532,4429532,Football
+Indiana State University,39.4683597,-87.4074032,IN,2129934,2129934,Basketball
+Indiana State University,39.4683597,-87.4074032,IN,4499988,4256090,Football
+Indiana University-Bloomington,39.166111,-86.5267824,IN,27008415,13230211,Basketball
+Indiana University-Bloomington,39.166111,-86.5267824,IN,52577443,24216483,Football
+Indiana University-Purdue University-Fort Wayne,41.1157605,-86.1752156,IN,1700944,1700944,Basketball
+Indiana University-Purdue University-Indianapolis,39.7737388,-86.1752156,IN,1928860,1928860,Basketball
+Iowa State University,42.0266573,-93.6464516,IA,14670525,7693014,Basketball
+Iowa State University,42.0266573,-93.6464516,IA,51931511,26960124,Football
+Jacksonville State University,33.8218096,-85.7692277,AL,1497090,1497090,Basketball
+Jacksonville State University,33.8218096,-85.7692277,AL,5070277,5070277,Football
+James Madison University,38.4400229,-78.8716115,VA,2709807,2709807,Basketball
+James Madison University,38.4400229,-78.8716115,VA,10649299,10649299,Football
+Kansas State University,39.1886244,-96.5810747,KS,10733840,8028533,Basketball
+Kansas State University,39.1886244,-96.5810747,KS,46167900,20549475,Football
+Kent State University at Kent,41.1467499,-81.343939,OH,2158311,2158311,Basketball
+Kent State University at Kent,41.1467499,-81.343939,OH,6901879,6901879,Football
+Kentucky Wesleyan College,37.7435478,-87.1201839,KY,570928,570928,Basketball
+Kentucky Wesleyan College,37.7435478,-87.1201839,KY,1336617,1336617,Football
+La Salle University,40.0377071,-75.1533282,PA,3558014,3558014,Basketball
+Lehigh University,40.6068348,75.3801693,PA,1725866,1725866,Basketball
+Lehigh University,40.6068348,75.3801693,PA,5969420,5969420,Football
+Lenoir-Rhyne University,35.7414291,-81.3262171,NC,768524,768524,Basketball
+Lenoir-Rhyne University,35.7414291,-81.3262171,NC,2369583,2369583,Football
+Liberty University,37.3530503,-79.1770145,VA,3400852,3400852,Basketball
+Liberty University,37.3530503,-79.1770145,VA,16358467,16358467,Football
+Lindenwood University,38.7859784,-90.4974718,MO,910699,910699,Basketball
+Lindenwood University,38.7859784,-90.4974718,MO,2505862,2505862,Football
+Lipscomb University,36.105632,-86.79999,TN,2228677,2228677,Basketball
+Louisiana State University and Agricultural & Mechanical College,30.4150707,-91.1791769,LA,9965537,9512515,Basketball
+Louisiana State University and Agricultural & Mechanical College,30.4150707,-91.1791769,LA,91950610,35319160,Football
+Louisiana Tech University,32.5281991,-92.6472759,LA,2566614,2556193,Basketball
+Louisiana Tech University,32.5281991,-92.6472759,LA,8572588,8443279,Football
+Malone University,40.826423,-81.3838467,OH,306752,306752,Basketball
+Malone University,40.826423,-81.3838467,OH,1261705,1261705,Football
+Marist College,41.7216281,-73.9345125,NY,2358993,2358993,Basketball
+Marist College,41.7216281,-73.9345125,NY,1514261,1514261,Football
+Marquette University,43.0389659,-87.9280415,WI,21856683,14979149,Basketball
+Mars Hill University,35.8274056,-82.5523992,NC,331136,331136,Basketball
+Mars Hill University,35.8274056,-82.5523992,NC,1202964,1202964,Football
+Marshall University,38.4223904,-82.4289042,WV,3161233,3161233,Basketball
+Marshall University,38.4223904,-82.4289042,WV,10442448,9825687,Football
+McNeese State University,30.1803625,-93.2179514,LA,1162753,1162753,Basketball
+McNeese State University,30.1803625,-93.2179514,LA,3473046,3473046,Football
+Miami University-Oxford,39.5092997,-84.7344846,OH,2234349,2234349,Basketball
+Miami University-Oxford,39.5092997,-84.7344846,OH,9272010,9272010,Football
+Michigan State University,42.7296495,-84.4815268,MI,23808250,14395851,Basketball
+Michigan State University,42.7296495,-84.4815268,MI,75545976,33928232,Football
+Middle Tennessee State University,35.843624,-86.3705892,TN,2982636,2982636,Basketball
+Middle Tennessee State University,35.843624,-86.3705892,TN,10063147,10063147,Football
+Midwestern State University,33.871351,-98.5215674,TX,525685,525685,Basketball
+Midwestern State University,33.871351,-98.5215674,TX,1588039,1588039,Football
+Minnesota State University-Mankato,44.1462142,-93.9993332,MN,653029,652428,Basketball
+Minnesota State University-Mankato,44.1462142,-93.9993332,MN,1413501,1413502,Football
+Mississippi State University,33.455202,-88.7882108,MS,8030614,7443131,Basketball
+Mississippi State University,33.455202,-88.7882108,MS,38035088,24026197,Football
+Missouri Southern State University,37.0972414,-94.4598183,MO,675244,594865,Basketball
+Missouri Southern State University,37.0972414,-94.4598183,MO,1937736,1922291,Football
+Missouri University of Science and Technology,37.9534444,-91.7755633,MO,605416,605416,Basketball
+Missouri University of Science and Technology,37.9534444,-91.7755633,MO,1571317,1537572,Football
+Missouri Western State University,39.7570008,-94.7869192,MO,593193,593193,Basketball
+Missouri Western State University,39.7570008,-94.7869192,MO,1886571,1886571,Football
+Monmouth University,40.2800543,-74.0054216,NJ,2795919,2795919,Basketball
+Monmouth University,40.2800543,-74.0054216,NJ,5215219,5215219,Football
+Montana State University,45.6674,-111.0546,MT,1833808,2094896,Basketball
+Montana State University,45.6674,-111.0546,MT,8709180,6955242,Football
+Morgan State University,39.3442922,-76.5824211,MD,1517680,1517680,Basketball
+Morgan State University,39.3442922,-76.5824211,MD,3367780,3367780,Football
+Murray State University,36.6163842,-88.3214979,KY,3896362,2398909,Basketball
+Murray State University,36.6163842,-88.3214979,KY,3514694,3344324,Football
+New Mexico State University-Main Campus,32.2824831,-106.7529053,NM,3077862,3077862,Basketball
+New Mexico State University-Main Campus,32.2824831,-106.7529053,NM,8565863,8565863,Football
+Newberry College,34.2857182,-81.620719,SC,458320,458320,Basketball
+Newberry College,34.2857182,-81.620719,SC,1653927,1653927,Football
+Norfolk State University,36.8480161,-76.262085,VA,1477761,1477761,Basketball
+Norfolk State University,36.8480161,-76.262085,VA,3259352,3259352,Football
+North Carolina A & T State University,36.0723647,-79.7721276,NC,1409516,1409516,Basketball
+North Carolina A & T State University,36.0723647,-79.7721276,NC,5609344,5608551,Football
+North Carolina Central University,35.9747369,-78.8981013,NC,1710811,1710811,Basketball
+North Carolina Central University,35.9747369,-78.8981013,NC,3936515,3936515,Football
+North Carolina State University at Raleigh,35.7863971,-78.6631364,NC,16533014,10295048,Basketball
+North Carolina State University at Raleigh,35.7863971,-78.6631364,NC,45701857,23334366,Football
+North Dakota State University-Main Campus,46.8903848,-96.7981266,ND,1720634,1720634,Basketball
+North Dakota State University-Main Campus,46.8903848,-96.7981266,ND,6048728,6048728,Football
+Northeastern University,42.3403745,-71.0893904,MA,3207255,3207255,Basketball
+Northern Arizona University,35.1804402,-111.6539683,AZ,1805164,1805164,Basketball
+Northern Arizona University,35.1804402,-111.6539683,AZ,5002914,5002914,Football
+Northern Illinois University,41.9339755,-88.7798537,IL,1775696,1775696,Basketball
+Northern Illinois University,41.9339755,-88.7798537,IL,8386474,8386474,Football
+Northwest University,47.6576921,-122.1924837,WA,250183,250183,Basketball
+Oakland University,42.671408,-83.218935,MI,2184404,1940265,Basketball
+Ohio State University-Main Campus,40.0007775,-83.0132446,OH,24953122,10996364,Basketball
+Ohio State University-Main Campus,40.0007775,-83.0132446,OH,115091304,60076743,Football
+Ohio University-Main Campus,39.3267795,-82.1010849,OH,3337404,3337404,Basketball
+Ohio University-Main Campus,39.3267795,-82.1010849,OH,9100410,9100410,Football
+Oklahoma State University-Main Campus,36.1219844,-97.070567,OK,12659706,6700510,Basketball
+Oklahoma State University-Main Campus,36.1219844,-97.070567,OK,52218241,24289694,Football
+Old Dominion University,36.8839664,-76.3039779,VA,3953002,3953002,Basketball
+Old Dominion University,36.8839664,-76.3039779,VA,11415018,11415018,Football
+Oregon State University,44.5639127,-123.2747161,OR,6326806,6203088,Basketball
+Oregon State University,44.5639127,-123.2747161,OR,35844057,23695109,Football
+Pennsylvania State University-Main Campus,40.7964727,-77.8628163,PA,11344446,7343831,Basketball
+Pennsylvania State University-Main Campus,40.7964727,-77.8628163,PA,100133983,48538956,Football
+Pittsburg State University,37.3913218,-94.7036545,KS,624073,624073,Basketball
+Pittsburg State University,37.3913218,-94.7036545,KS,1806143,1806143,Football
+Portland State University,45.5111227,-122.6845654,OR,1809651,1809651,Basketball
+Portland State University,45.5111227,-122.6845654,OR,4563174,4092668,Football
+Prairie View A & M University,30.0879218,-95.9890087,TX,1184538,1184538,Basketball
+Prairie View A & M University,30.0879218,-95.9890087,TX,3623547,3623547,Football
+Presbyterian College,30.0879218,-81.8798708,SC,1330762,1330762,Basketball
+Presbyterian College,30.0879218,-81.8798708,SC,1741588,1741588,Football
+Princeton University,40.3486278,-74.6593444,NJ,1342776,1342776,Basketball
+Princeton University,40.3486278,-74.6593444,NJ,4030758,4030758,Football
+Providence College,41.8441035,-71.4379605,RI,11117186,11117186,Basketball
+Purdue University-Main Campus,40.4282112,-86.9143951,IN,18017191,9604624,Basketball
+Purdue University-Main Campus,40.4282112,-86.9143951,IN,54752462,27342141,Football
+Radford University,37.1398766,-80.5510635,VA,1682177,1682177,Basketball
+Rice University,29.69102,-95.4172133,TX,3169654,3169654,Basketball
+Rice University,29.69102,-95.4172133,TX,12892595,12892595,Football
+Rutgers University-New Brunswick,40.4982079,-74.4467932,NJ,7545360,7545360,Basketball
+Rutgers University-New Brunswick,40.4982079,-74.4467932,NJ,26698913,26698913,Football
+Saginaw Valley State University,43.5142013,-83.9625431,MI,646791,632878,Basketball
+Saginaw Valley State University,43.5142013,-83.9625431,MI,1793290,1791832,Football
+Saint Joseph's University,39.995634,-75.2406137,PA,6152876,6152876,Basketball
+Saint Mary's College of California,37.8414569,-122.1107267,CA,4401818,4401818,Basketball
+Sam Houston State University,30.7155156,-95.5490274,TX,1194442,1194442,Basketball
+Sam Houston State University,30.7155156,-95.5490274,TX,4346313,4346313,Football
+Samford University,33.4649218,-86.7913423,AL,1917385,1917384,Basketball
+Samford University,33.4649218,-86.7913423,AL,5938603,5938603,Football
+San Diego State University,32.7720012,-117.0726966,CA,6248159,5786034,Basketball
+San Diego State University,32.7720012,-117.0726966,CA,13422004,16070045,Football
+San Jose State University,37.334157,-121.8842554,CA,2035793,2035793,Basketball
+San Jose State University,37.334157,-121.8842554,CA,8512268,8512268,Football
+South Carolina State University,33.4983391,-80.8478861,SC,785619,785619,Basketball
+South Carolina State University,33.4983391,-80.8478861,SC,2718036,2718036,Football
+Southeast Missouri State University,37.3148783,-89.5280438,MO,1304144,1304144,Basketball
+Southeast Missouri State University,37.3148783,-89.5280438,MO,3051705,3051705,Football
+Southern Arkansas University Main Campus,33.2910064,-93.2359922,AR,328340,328340,Basketball
+Southern Arkansas University Main Campus,33.2910064,-93.2359922,AR,1027375,1027375,Football
+Southern Illinois University-Carbondale,37.7100209,-89.2225941,IL,2482549,2482549,Basketball
+Southern Illinois University-Carbondale,37.7100209,-89.2225941,IL,4212321,4212321,Football
+Southern Methodist University,32.8449511,-96.7859334,TX,7590481,7590481,Basketball
+Southern Methodist University,32.8449511,-96.7859334,TX,20519325,20519325,Football
+Southern University and A & M College,30.5586838,-91.1738289,LA,596992,815704,Basketball
+Southern University and A & M College,30.5586838,-91.1738289,LA,3281704,2145322,Football
+Southern Utah University,37.6755016,-113.0710984,UT,1274977,1301285,Basketball
+Southern Utah University,37.6755016,-113.0710984,UT,4384472,3762056,Football
+St Bonaventure University,42.0799022,-78.4845212,NY,3832105,3832105,Basketball
+St John's University-New York,40.7247555,-73.7923154,NY,10028677,10028677,Basketball
+Stanford University,37.4400665,-122.1696059,CA,6769220,7143168,Basketball
+Stanford University,37.4400665,-122.1696059,CA,44462092,30470121,Football
+Stephen F Austin State University,31.6188766,-94.6525142,TX,2015066,2015066,Basketball
+Stephen F Austin State University,31.6188766,-94.6525142,TX,3966581,3966581,Football
+Stetson University,29.0347047,-81.3032231,FL,2386051,2386051,Basketball
+Stetson University,29.0347047,-81.3032231,FL,1887025,1887025,Football
+Syracuse University,43.049345,-76.138055,NY,34567071,14845555,Basketball
+Syracuse University,43.049345,-76.138055,NY,43813014,28000705,Football
+Tarleton State University,32.2160426,-98.2159537,TX,848899,864953,Basketball
+Tarleton State University,32.2160426,-98.2159537,TX,1921614,1861415,Football
+Temple University,39.9803512,-75.1570681,PA,6487460,6487460,Basketball
+Temple University,39.9803512,-75.1570681,PA,24397873,24397873,Football
+Tennessee State University,36.1682397,-86.8259623,TN,1414097,1330636,Basketball
+Tennessee State University,36.1682397,-86.8259623,TN,3603109,3389880,Football
+Texas A & M University-College Station,30.6187558,-96.3364772,TX,12349705,11818860,Basketball
+Texas A & M University-College Station,30.6187558,-96.3364772,TX,73517543,42803201,Football
+Texas Christian University,32.709151,-97.3593366,TX,14852389,15718763,Basketball
+Texas Christian University,32.709151,-97.3593366,TX,65384773,40861131,Football
+Texas State University,29.8888838,-97.9430682,TX,1976474,1976474,Basketball
+Texas State University,29.8888838,-97.9430682,TX,9706628,9706628,Football
+Texas Tech University,33.5842591,-101.8782822,TX,12382899,12338645,Basketball
+Texas Tech University,33.5842591,-101.8782822,TX,51075082,20765181,Football
+The University of Alabama,33.2096093,-87.5466476,AL,16028795,15966875,Basketball
+The University of Alabama,33.2096093,-87.5466476,AL,94604899,69718059,Football
+The University of Findlay,41.0537667,-83.6534018,OH,687649,637109,Basketball
+The University of Findlay,41.0537667,-83.6534018,OH,2164069,2153067,Football
+The University of Tennessee-Chattanooga,35.047943,-85.2982972,TN,1940945,1940945,Basketball
+The University of Tennessee-Chattanooga,35.047943,-85.2982972,TN,4441991,4441991,Football
+The University of Tennessee-Knoxville,35.9520732,-83.9258338,TN,17003826,10554613,Basketball
+The University of Tennessee-Knoxville,35.9520732,-83.9258338,TN,91022335,35170599,Football
+The University of Texas at Austin,30.2861062,-97.7393634,TX,16493236,11649912,Basketball
+The University of Texas at Austin,30.2861062,-97.7393634,TX,156147208,43200270,Football
+The University of Texas at El Paso,31.7698629,-106.5055082,TX,5016121,4247850,Basketball
+The University of Texas at El Paso,31.7698629,-106.5055082,TX,14219107,12101963,Football
+The University of Texas at San Antonio,29.5845786,-98.6167664,TX,2239480,2239480,Basketball
+The University of Texas at San Antonio,29.5845786,-98.6167664,TX,11209349,11209349,Football
+Towson University,39.3936139,-76.6070574,MD,2259918,2259918,Basketball
+Towson University,39.3936139,-76.6070574,MD,4822097,4822097,Football
+Troy University,31.7984183,-85.9552906,AL,2198323,2604565,Basketball
+Troy University,31.7984183,-85.9552906,AL,8995915,8571387,Football
+Tulane University of Louisiana,29.9354099,-90.122739,LA,4984520,4984520,Basketball
+Tulane University of Louisiana,29.9354099,-90.122739,LA,13291710,13291710,Football
+University at Buffalo,43.00095,-78.789729,NY,3093556,3093556,Basketball
+University at Buffalo,43.00095,-78.789729,NY,8599068,8599068,Football
+University of Akron Main Campus,41.0754323,-81.5123774,OH,3045115,3045115,Basketball
+University of Akron Main Campus,41.0754323,-81.5123774,OH,8186577,8186577,Football
+University of Alabama at Birmingham,33.5058651,-86.7994508,AL,3628668,3533944,Basketball
+University of Alabama at Birmingham,33.5058651,-86.7994508,AL,11921225,11725395,Football
+University of Arizona,32.2327247,-110.9508944,AZ,22437254,10383630,Basketball
+University of Arizona,32.2327247,-110.9508944,AZ,43272457,22548661,Football
+University of Arkansas,36.0699572,-94.1769533,AR,21424702,10440326,Basketball
+University of Arkansas,36.0699572,-94.1769533,AR,76463785,43162670,Football
+University of Arkansas at Little Rock,34.7257004,-92.340731,AR,1107986,2126312,Basketball
+University of Arkansas at Pine Bluff,34.2262213,-92.0195428,AR,833958,833958,Basketball
+University of Arkansas at Pine Bluff,34.2262213,-92.0195428,AR,2354136,2354136,Football
+University of California-Berkeley,37.8718399,-122.2603363,CA,7840731,6131940,Basketball
+University of California-Berkeley,37.8718399,-122.2603363,CA,33532252,27790118,Football
+University of California-Irvine,33.6485178,-117.8413671,CA,2953537,2953537,Basketball
+University of California-Los Angeles,34.0725988,-118.439277,CA,11959355,15468381,Basketball
+University of California-Los Angeles,34.0725988,-118.439277,CA,41288698,35463068,Football
+University of California-Santa Barbara,34.4139629,-119.848947,CA,3202493,3202493,Basketball
+University of Central Arkansas,35.0773132,-92.4579421,AR,1295287,1295287,Basketball
+University of Central Arkansas,35.0773132,-92.4579421,AR,3142657,3142657,Football
+University of Central Florida,28.6082727,-81.1926631,FL,3879707,4594025,Basketball
+University of Central Florida,28.6082727,-81.1926631,FL,30248726,24767711,Football
+University of Cincinnati-Main Campus,39.1343961,-84.5184317,OH,7644770,7644770,Basketball
+University of Cincinnati-Main Campus,39.1343961,-84.5184317,OH,14998887,14998887,Football
+University of Colorado Boulder,40.0034965,-105.2677112,CO,9310818,7252987,Basketball
+University of Colorado Boulder,40.0034965,-105.2677112,CO,43461696,29642881,Football
+University of Connecticut,41.8088143,-72.2498767,CT,9325922,9325922,Basketball
+University of Connecticut,41.8088143,-72.2498767,CT,16224408,16224408,Football
+University of Dayton,39.7394599,-84.1799547,OH,16281364,7434825,Basketball
+University of Dayton,39.7394599,-84.1799547,OH,159593,1412930,Football
+University of Delaware,39.6795367,-75.7530606,DE,2785559,2785559,Basketball
+University of Delaware,39.6795367,-75.7530606,DE,8313306,7844569,Football
+University of Florida,29.6494246,-82.3399209,FL,11943413,9317385,Basketball
+University of Florida,29.6494246,-82.3399209,FL,84837920,39149664,Football
+University of Georgia,33.9562553,-83.3740399,GA,10693803,7756002,Basketball
+University of Georgia,33.9562553,-83.3740399,GA,123073722,49207808,Football
+University of Hawaii at Manoa,21.300702,-157.8176773,HI,2960055,2960055,Basketball
+University of Hawaii at Manoa,21.300702,-157.8176773,HI,12737691,12737691,Football
+University of Houston,29.7203176,-95.343528,TX,9219796,9219796,Basketball
+University of Houston,29.7203176,-95.343528,TX,18656864,18656864,Football
+University of Idaho,46.7288124,-117.0126084,ID,1729001,1729001,Basketball
+University of Idaho,46.7288124,-117.0126084,ID,5515778,5515778,Football
+University of Illinois at Urbana-Champaign,40.1088318,-88.2300373,IL,21419589,10480939,Basketball
+University of Illinois at Urbana-Champaign,40.1088318,-88.2300373,IL,58155936,23418953,Football
+University of Iowa,41.661897,-91.5364924,IA,12120342,8097014,Basketball
+University of Iowa,41.661897,-91.5364924,IA,81037375,36838032,Football
+University of Kansas,38.958542,-95.2476138,KS,18974009,12547439,Basketball
+University of Kansas,38.958542,-95.2476138,KS,38148252,25325279,Football
+University of Kentucky,38.0380607,-84.5071374,KY,38829651,20202558,Basketball
+University of Kentucky,38.0380607,-84.5071374,KY,41366437,31446474,Football
+University of Louisiana at Lafayette,30.2324598,-92.0323738,LA,2780548,2780548,Basketball
+University of Louisiana at Lafayette,30.2324598,-92.0323738,LA,11050193,11050193,Football
+University of Louisville,38.2157954,-85.7614322,KY,42759248,19180078,Basketball
+University of Louisville,38.2157954,-85.7614322,KY,47327709,44057106,Football
+University of Maine,44.8955674,-68.6735534,ME,1432766,1432766,Basketball
+University of Maine,44.8955674,-68.6735534,ME,4287134,4287134,Football
+University of Maryland-College Park,38.9859963,-76.9398645,MD,14059425,9163793,Basketball
+University of Maryland-College Park,38.9859963,-76.9398645,MD,46592593,28507867,Football
+University of Massachusetts-Amherst,42.3861771,-72.5266757,MA,4025395,4025395,Basketball
+University of Massachusetts-Amherst,42.3861771,-72.5266757,MA,10347538,10347538,Football
+University of Memphis,35.1158539,-89.9311296,TN,8217757,8217757,Basketball
+University of Memphis,35.1158539,-89.9311296,TN,17856441,17856441,Football
+University of Miami,25.7178924,-80.2746368,FL,9988284,8895333,Basketball
+University of Miami,25.7178924,-80.2746368,FL,56257383,56257383,Football
+University of Michigan-Ann Arbor,42.2758739,-83.7427632,MI,21114322,9874360,Basketball
+University of Michigan-Ann Arbor,42.2758739,-83.7427632,MI,122270243,47430574,Football
+University of Minnesota-Twin Cities,44.9758602,-93.2345109,MN,18835871,9115817,Basketball
+University of Minnesota-Twin Cities,44.9758602,-93.2345109,MN,63016508,32403693,Football
+University of Mississippi,34.3662913,-89.5379826,MS,11224450,9432295,Basketball
+University of Mississippi,34.3662913,-89.5379826,MS,48247277,32215416,Football
+University of Missouri-Columbia,38.9453385,-92.3282738,MO,12586990,8255259,Basketball
+University of Missouri-Columbia,38.9453385,-92.3282738,MO,38471523,23586363,Football
+University of Nebraska-Lincoln,40.8175693,-96.7005013,NE,15042854,9180631,Basketball
+University of Nebraska-Lincoln,40.8175693,-96.7005013,NE,94336296,34574999,Football
+University of Nevada-Las Vegas,36.1065217,-115.1444487,NV,5795483,5795483,Basketball
+University of Nevada-Las Vegas,36.1065217,-115.1444487,NV,9768926,9768926,Football
+University of Nevada-Reno,39.5438691,-119.8185305,NV,4706010,4706010,Basketball
+University of Nevada-Reno,39.5438691,-119.8185305,NV,10710232,10710232,Football
+University of New Mexico-Main Campus,35.0893968,-106.6246758,NM,4206654,4206654,Basketball
+University of New Mexico-Main Campus,35.0893968,-106.6246758,NM,9160962,9160962,Football
+University of North Alabama,34.8074555,-87.6811676,AL,1159508,1159508,Basketball
+University of North Alabama,34.8074555,-87.6811676,AL,2745528,2745528,Football
+University of North Carolina at Chapel Hill,35.9132961,-79.050072,NC,27076307,11204115,Basketball
+University of North Carolina at Chapel Hill,35.9132961,-79.050072,NC,39314461,23127138,Football
+University of North Carolina at Charlotte,35.3058818,-80.7353002,NC,3295523,3295523,Basketball
+University of North Carolina at Charlotte,35.3058818,-80.7353002,NC,9715195,9715195,Football
+University of North Carolina Wilmington,34.2277698,-77.8796689,NC,2317837,2317837,Basketball
+University of North Texas,33.2112391,-97.1414643,TX,2847662,2847662,Basketball
+University of North Texas,33.2112391,-97.1414643,TX,11692600,11692600,Football
+University of Northern Colorado,40.4109302,-104.6927651,CO,1538837,1538837,Basketball
+University of Northern Colorado,40.4109302,-104.6927651,CO,3882353,3882353,Football
+University of Northern Iowa,42.514711,-92.4595681,IA,3550793,3550793,Basketball
+University of Northern Iowa,42.514711,-92.4595681,IA,4281286,4281286,Football
+University of Notre Dame,41.703084,-86.2389844,IN,4153208,8331273,Basketball
+University of Notre Dame,41.703084,-86.2389844,IN,115510518,50201929,Football
+University of Oklahoma-Norman Campus,35.2085041,-97.4456811,OK,12355263,10072404,Basketball
+University of Oklahoma-Norman Campus,35.2085041,-97.4456811,OK,94817907,43453315,Football
+University of Oregon,44.0637862,-123.0787724,OR,10918131,10348633,Basketball
+University of Oregon,44.0637862,-123.0787724,OR,72146320,33024841,Football
+University of Pennsylvania,39.9504425,-75.1925902,PA,2049825,2049825,Basketball
+University of Pennsylvania,39.9504425,-75.1925902,PA,3485696,3485696,Football
+University of Pittsburgh-Pittsburgh Campus,40.44439,-79.9534133,PA,13220336,11013283,Basketball
+University of Pittsburgh-Pittsburgh Campus,40.44439,-79.9534133,PA,39176605,31843372,Football
+University of San Diego,32.7716583,-117.1915679,CA,3120907,3120907,Basketball
+University of San Diego,32.7716583,-117.1915679,CA,1532784,1532784,Football
+University of Sioux Falls,43.5327632,-96.737942,SD,564320,546866,Basketball
+University of Sioux Falls,43.5327632,-96.737942,SD,1586196,1580141,Football
+University of South Alabama,30.6954258,-88.1752139,AL,2313701,2052778,Basketball
+University of South Alabama,30.6954258,-88.1752139,AL,9783711,10130130,Football
+University of South Carolina-Columbia,33.9937575,-81.0299186,SC,11093661,8561964,Basketball
+University of South Carolina-Columbia,33.9937575,-81.0299186,SC,65004536,36206781,Football
+University of South Carolina-Upstate,35.003074,-81.969488,SC,1167592,1167592,Basketball
+University of South Dakota,42.7872223,-96.9249387,SD,1469868,1469868,Basketball
+University of South Dakota,42.7872223,-96.9249387,SD,4031135,4031135,Football
+University of South Florida-Main Campus,28.0583276,-82.4098765,FL,4931868,4931868,Basketball
+University of South Florida-Main Campus,28.0583276,-82.4098765,FL,16760097,16760097,Football
+University of Southern California,34.0309703,-118.2789735,CA,6275440,6901843,Basketball
+University of Southern California,34.0309703,-118.2789735,CA,50046008,32124522,Football
+University of Southern Mississippi,31.3300116,-89.3340423,MS,2169053,2169053,Basketball
+University of Southern Mississippi,31.3300116,-89.3340423,MS,7068057,7068057,Football
+University of Toledo,41.6557154,-83.6162183,OH,2673988,2673988,Basketball
+University of Toledo,41.6557154,-83.6162183,OH,11696094,11696094,Football
+University of Tulsa,36.1492597,-95.9465855,OK,6196308,6196308,Basketball
+University of Tulsa,36.1492597,-95.9465855,OK,15231473,15231473,Football
+University of Utah,40.7650458,-111.8489555,UT,10511632,8965613,Basketball
+University of Utah,40.7650458,-111.8489555,UT,63181908,29262589,Football
+University of Virginia-Main Campus,38.0370443,-78.5026341,VA,13400721,13400721,Basketball
+University of Virginia-Main Campus,38.0370443,-78.5026341,VA,33726985,26280855,Football
+University of Washington-Seattle Campus,47.6565538,-122.3127075,WA,11409380,9224123,Basketball
+University of Washington-Seattle Campus,47.6565538,-122.3127075,WA,84041770,40474139,Football
+University of West Alabama,32.5849811,-88.1870591,AL,621158,623622,Basketball
+University of West Alabama,32.5849811,-88.1870591,AL,2353036,2279062,Football
+University of West Georgia,33.5735847,-85.097716,GA,536235,536235,Basketball
+University of West Georgia,33.5735847,-85.097716,GA,1751919,1751919,Football
+University of Wisconsin-Green Bay,44.532204,-87.9217003,WI,1874827,1874827,Basketball
+University of Wisconsin-Madison,43.075486,-89.4043511,WI,21701868,8548485,Basketball
+University of Wisconsin-Madison,43.075486,-89.4043511,WI,89944636,31714090,Football
+University of Wisconsin-Milwaukee,43.0752308,-87.881425,WI,2588033,2588033,Basketball
+University of Wisconsin-Platteville,42.7322351,-90.4868112,WI,367164,360639,Basketball
+University of Wisconsin-Platteville,42.7322351,-90.4868112,WI,846117,798583,Football
+University of Wyoming,41.3140214,-105.5846008,WY,3329650,3329650,Basketball
+University of Wyoming,41.3140214,-105.5846008,WY,13649998,13649998,Football
+Utah State University,41.7429398,-111.8137667,UT,4250996,4250996,Basketball
+Utah State University,41.7429398,-111.8137667,UT,10010163,10010163,Football
+Valdosta State University,30.8465653,-83.2900234,GA,586522,586522,Basketball
+Valdosta State University,30.8465653,-83.2900234,GA,1545143,1545143,Football
+Valparaiso University,41.4602103,-87.0366594,IN,2461689,2415050,Basketball
+Valparaiso University,41.4602103,-87.0366594,IN,1221085,1182843,Football
+Vanderbilt University,36.1490297,-86.802263,TN,10876435,9901818,Basketball
+Vanderbilt University,36.1490297,-86.802263,TN,32108897,28610632,Football
+Villanova University,40.0369846,-75.3444079,PA,14428932,14428932,Basketball
+Villanova University,40.0369846,-75.3444079,PA,6765161,6765161,Football
+Virginia Commonwealth University,37.5496312,-77.4526597,VA,8833917,6102633,Basketball
+Virginia Polytechnic Institute and State University,37.2290053,-80.4236441,VA,9886728,8525606,Basketball
+Virginia Polytechnic Institute and State University,37.2290053,-80.4236441,VA,56224912,30123282,Football
+Virginia State University,37.2364644,-77.4198758,VA,693049,693049,Basketball
+Virginia State University,37.2364644,-77.4198758,VA,1502282,1502282,Football
+Wagner College,40.6149557,-74.0943823,NY,1520014,1487551,Basketball
+Wagner College,40.6149557,-74.0943823,NY,3671611,3636726,Football
+Wake Forest University,36.1348359,-80.2708623,NC,9148670,8805630,Basketball
+Wake Forest University,36.1348359,-80.2708623,NC,26722457,21462286,Football
+Washburn University,39.03334,-95.7015649,KS,703633,703633,Basketball
+Washburn University,39.03334,-95.7015649,KS,1720702,1720702,Football
+Washington State University,46.7304151,-117.1581928,WA,6171373,5483898,Basketball
+Washington State University,46.7304151,-117.1581928,WA,45338410,22052168,Football
+Weber State University,41.1932522,-111.9460552,UT,1913406,1913406,Basketball
+Weber State University,41.1932522,-111.9460552,UT,4092794,4092794,Football
+West Virginia University,39.6480359,-79.9697147,WV,8484584,10798893,Basketball
+West Virginia University,39.6480359,-79.9697147,WV,24692746,22290035,Football
+Western Carolina University,35.3111601,-83.1881927,NC,1089269,1089269,Basketball
+Western Carolina University,35.3111601,-83.1881927,NC,2921553,2921553,Football
+Western Kentucky University,36.9833474,-86.4579446,KY,3455918,3455918,Basketball
+Western Kentucky University,36.9833474,-86.4579446,KY,8151383,8151383,Football
+Western Michigan University,42.2837337,-85.6102504,MI,2243842,2243842,Basketball
+Western Michigan University,42.2837337,-85.6102504,MI,9257979,9257979,Football
+Wichita State University,37.716465,-97.2955956,KS,8182863,8182863,Basketball
+Xavier University,39.148913,-84.4795628,OH,13916975,7406374,Basketball
+Yale University,41.3108107,-72.9228177,CT,1416853,1416853,Basketball
+Yale University,41.3108107,-72.9228177,CT,4247553,4247118,Football
+Youngstown State University,41.1066413,-80.6480952,OH,1555175,1555175,Basketball
+Youngstown State University,41.1066413,-80.6480952,OH,4349972,4349972,Football
