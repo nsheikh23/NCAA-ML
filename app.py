@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, url_for, jsonify
+from flask import Flask, render_template, request, url_for
 from flask_bootstrap import Bootstrap
-# import sqlalchemy
-# from markupsafe import escape
-# from bson.json_util import dumps
+from FlaskAPPAML import app
+import json
+import urllib.request
+import os
 import rdsconnection as db
 
 app = Flask(__name__, template_folder="templates")
@@ -14,38 +15,28 @@ bootstrap = Bootstrap(app)
 def index():
     return render_template("index.html")
 
-@app.route('/NBA')
-def NBA():
-    details = db.get_all("NBA")
-    print(details)
-    # Need to get all players into dictionary form
-    # var = {}
-    # for detail in details:
-        # var = detail
-    #     var['pick'] = detail[0]
-    #     var['team'] = detail[1]
-    #     var['player'] = detail[2]
-    #     var['position'] = detail[3]
-    # return render_template('index.html', var=var)
-    return jsonify(details)
+@app.route('/basketball')
+def basketball():
+    return render_template(
+        'basketball.html',
+        basketball_form = basketball_form,
+        title = 'Basketball Predictions',
+        message = 'Which conference should you go for?'
+    )
 
-@app.route('/NFL')
-def NFL():
-    details = db.get_all("NFL")
-    print(details)
-    # for detail in details:
-    #     var = detail
-    # return render_template('index.html', var=var)
-    return jsonify(details)
+@app.route('/football')
+def football():
 
-# # @app.route('/School/<schoolname>')
-# # def profile(schoolname):
-# #     return '{}\'s profile'.format(escape(schoolname))
+    return render_template(
+        'football.html',
+        football_form = football_form,
+        title = "Football Predictions",
+        message = "Which conference should you go for?"
+    )
 
 with app.test_request_context():
-    print(url_for('NBA'))
-    print(url_for('NFL'))
-    # print(url_for('profile', username="Duke"))
+    print(url_for('basketball'))
+    print(url_for('football'))
 
 if __name__ == '__main__':
     app.run(debug=True)
