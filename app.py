@@ -13,10 +13,19 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
+    details = db.get_all()
+    # print(details)
+    for detail in details:
+        var = detail
     return render_template("index.html")
 
 @app.route('/basketball')
 def basketball():
+    bball_key = os.environ.get('API_KEY', "3ykY3j9WZDYvS0Dvf5VoJ1kA0yVT5HVzT+foY4SzKvD6LJhHoysBjlEQWaOniNQCGqsjKrytONq1kdxEWo3Scg==")
+    bball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/91af20abfc58455182eaaa615d581c59/services/da7cdb9359a443f0abdef36d30ce8f1c/execute?api-version=2.0&details=true")
+    
+    B_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ bball_key)}
+
     return render_template(
         'basketball.html',
         basketball_form = basketball_form,
@@ -26,6 +35,10 @@ def basketball():
 
 @app.route('/football')
 def football():
+    fball_key = os.environ.get('API_KEY', "3ykY3j9WZDYvS0Dvf5VoJ1kA0yVT5HVzT+foY4SzKvD6LJhHoysBjlEQWaOniNQCGqsjKrytONq1kdxEWo3Scg==")
+    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/91af20abfc58455182eaaa615d581c59/services/da7cdb9359a443f0abdef36d30ce8f1c/execute?api-version=2.0&details=true")
+
+    F_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ fball_key)}
 
     return render_template(
         'football.html',

@@ -4,3 +4,6 @@ boto3
 aws-psycopg2
 psycopg2-binary
 flask-bootstrap
+wtforms==2.1
+requests==2.22.0
+Werkzeug<1.0
