@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Determine If You Will Be Drafted Or Not</h2>
+<form method=post>
+    <dl>
+        <p>
+            <!-- {{form.title}} -->
+        </p>
+
+        <p>
+            <h3>Position</h3> 
+            Enter the position you play:<br /><br />
+            {{form.text}}
+        </p>
+    </dl>
+    <p><input type="submit" value="submit"</p>
+ </form>
+{% endblock%}

@@ -18,6 +18,15 @@ def home():
     # # print(details)
     # for detail in details:
     #     var = detail
+    
+    return render_template("index.html")
+
+@app.route('/basketball')
+def basketball():
+    bball_key = os.environ.get('API_KEY', "3ykY3j9WZDYvS0Dvf5VoJ1kA0yVT5HVzT+foY4SzKvD6LJhHoysBjlEQWaOniNQCGqsjKrytONq1kdxEWo3Scg==")
+    bball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/91af20abfc58455182eaaa615d581c59/services/da7cdb9359a443f0abdef36d30ce8f1c/execute?api-version=2.0&details=true")
+    
+    B_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ bball_key)}
 
     form = SubmissionForm(request.form)
 
@@ -47,15 +56,6 @@ def home():
         # Serialize the input data into json string
         body = str.encode(json.dumps(data))
     
-    return render_template("index.html")
-
-@app.route('/basketball')
-def basketball():
-    bball_key = os.environ.get('API_KEY', "3ykY3j9WZDYvS0Dvf5VoJ1kA0yVT5HVzT+foY4SzKvD6LJhHoysBjlEQWaOniNQCGqsjKrytONq1kdxEWo3Scg==")
-    bball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/91af20abfc58455182eaaa615d581c59/services/da7cdb9359a443f0abdef36d30ce8f1c/execute?api-version=2.0&details=true")
-    
-    B_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ bball_key)}
-
     req = urllib.request.Request(bball_url, body, B_HEADERS)
 
     # Send this request to the AML service and render the results on page
@@ -69,7 +69,7 @@ def basketball():
         # result = json.dumps(result, indent=4, sort_keys=True)
         return render_template(
             'basketball.html',
-            title="This is the result from AzureML running our Basketball Conference Prediction:",
+            title="This is the result from AzureML running our Basketball Draft Prediction:",
             result=result)
 
     # An HTTP error
@@ -85,7 +85,7 @@ def basketball():
         'basketball.html',
         form = form,
         title = 'Run App',
-        time=datetime.now(),
+        year=datetime.now().year,
         message = 'Which conference should you go for?'
     )
 
@@ -96,6 +96,34 @@ def football():
 
     F_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ fball_key)}
 
+    form = SubmissionForm(request.form)
+
+    # Form has been submitted
+    if request.method == 'POST' and form.validate():
+
+        # Plug in the data into a dictionary object 
+        #  - data from the input form
+        #  - text data must be converted to lowercase
+        data =  {
+              "Inputs": {
+                "input1": {
+                  "ColumnNames": ["gender", "age", "size", "weight"],
+                  "Values": [ [
+                      0,
+                      1,
+                      form.title.data.lower(),
+                      0
+
+                    ]
+                  ]
+                }
+              },
+              "GlobalParameters": {}
+            }
+
+        # Serialize the input data into json string
+        body = str.encode(json.dumps(data))
+    
     req = urllib.request.Request(fball_url, body, F_HEADERS)
 
     # Send this request to the AML service and render the results on page
@@ -109,7 +137,7 @@ def football():
         # result = json.dumps(result, indent=4, sort_keys=True)
         return render_template(
             'football.html',
-            title="This is the result from AzureML running our Football Conference Prediction:",
+            title="This is the result from AzureML running our Football Draft Prediction:",
             result=result)
 
     # An HTTP error
@@ -125,7 +153,7 @@ def football():
         'football.html',
         form = form,
         title = 'Run App',
-        time=datetime.now(),
+        year=datetime.now().year,
         message = 'Which conference should you go for?'
     )
 
