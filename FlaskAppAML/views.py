@@ -89,7 +89,7 @@ def basketball():
         message = 'Will you be drafted?'
     )
 
-@app.route('/football')
+@app.route('/football', methods=['GET', 'POST'])
 def football():
     fball_key = os.environ.get('API_KEY', "Jur+v2F7MlT70r85jA7F3Ntt48vBoSkZGlg67g7VihkF+/jNwxI8mSOpqY1ADz4nz5+HUMLLB6LJ2gaDGalJwg==")
     fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/1bd82c355c1447d591afec4715a4b045/services/27f2c06eb9ad492db435e9999a272af4/execute?api-version=2.0&format=swagger")
@@ -106,7 +106,7 @@ def football():
         #  - text data must be converted to lowercase
         data = {
         "Inputs": {
-                "input1":
+                "input1": 
                 [
                     {
                             'Pos': "",   
@@ -137,7 +137,7 @@ def football():
         try:
             # response = requests.post(URL, headers=HEADERS, data=body)
             response = urllib.request.urlopen(req)
-            #print(response)
+            print(response)
             respdata = response.read()
             result = json.loads(str(respdata, 'utf-8'))
             result = do_something_pretty(result)
@@ -154,7 +154,7 @@ def football():
                 'fballResult.html',
                 title='There was an error',
                 result=result)
-            #print(err)
+        print(err)
 
     return render_template(
         'football.html',
@@ -170,9 +170,11 @@ def do_something_pretty(jsondata):
 
     # We only want the first array from the array of arrays under "Value" 
     # - it's cluster assignment and distances from all centroid centers from k-means model
-    value = jsondata["Results"]["output1"]["value"]["Values"][0]
+    prediction = jsondata["Results"]["output1"][0]['Scored Labels']
+    chance = jsondata["Results"]["output1"][0]['Scored Probabilities']
     #valuelen = len(value)
-    print(value)
+    print(prediction)
+    print(chance)
     # Convert values (a list) to a list of tuples [(cluster#,distance),...]
     # valuetuple = list(zip(range(valuelen-1), value[1:(valuelen)]))
     # Convert the list of tuples to one long list (flatten it)
@@ -184,7 +186,7 @@ def do_something_pretty(jsondata):
     # Build a placeholder for the cluster#,distance values
     #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
     # print(repstr)
-    output='For a brain with the size of : '+value[2]+ "<br/>Our Algorithm would calculate the weight to be: "+ value[4]
+    output=f'For the provided information our algorithm would calculate a draft probability of: {chance}'
     # Build the entire html table for the results data representation
     #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
     #return tablestr % data
