@@ -2,7 +2,7 @@
 Routes and views for the flask application.
 """
 
-from flask import render_template, request, url_for
+from flask import render_template, request
 from FlaskAppAML import app
 from FlaskAppAML.forms import SubmissionForm
 from datetime import datetime
@@ -56,37 +56,37 @@ def basketball():
         # Serialize the input data into json string
         body = str.encode(json.dumps(data))
     
-    req = urllib.request.Request(bball_url, body, B_HEADERS)
+        req = urllib.request.Request(bball_url, body, B_HEADERS)
 
-    # Send this request to the AML service and render the results on page
-    try:
-        # response = requests.post(URL, headers=HEADERS, data=body)
-        response = urllib.request.urlopen(req)
-        #print(response)
-        respdata = response.read()
-        result = json.loads(str(respdata, 'utf-8'))
-        result = do_something_pretty(result)
-        # result = json.dumps(result, indent=4, sort_keys=True)
-        return render_template(
-            'basketball.html',
-            title="This is the result from AzureML running our Basketball Draft Prediction:",
-            result=result)
+        # Send this request to the AML service and render the results on page
+        try:
+            # response = requests.post(URL, headers=HEADERS, data=body)
+            response = urllib.request.urlopen(req)
+            #print(response)
+            respdata = response.read()
+            result = json.loads(str(respdata, 'utf-8'))
+            result = do_something_pretty(result)
+            # result = json.dumps(result, indent=4, sort_keys=True)
+            return render_template(
+                'basketball.html',
+                title="This is the result from AzureML running our Basketball Draft Prediction:",
+                result=result)
 
-    # An HTTP error
-    except urllib.error.HTTPError as err:
-        result="The request failed with status code: " + str(err.code)
-        return render_template(
-            'basketball.html',
-            title='There was an error',
-            result=result)
-        #print(err)
+        # An HTTP error
+        except urllib.error.HTTPError as err:
+            result="The request failed with status code: " + str(err.code)
+            return render_template(
+                'basketball.html',
+                title='There was an error',
+                result=result)
+            #print(err)
 
     return render_template(
         'basketball.html',
         form = form,
         title = 'Run App',
         year=datetime.now().year,
-        message = 'Which conference should you go for?'
+        message = 'Will you be drafted?'
     )
 
 @app.route('/football')
@@ -124,37 +124,37 @@ def football():
         # Serialize the input data into json string
         body = str.encode(json.dumps(data))
     
-    req = urllib.request.Request(fball_url, body, F_HEADERS)
+        req = urllib.request.Request(fball_url, body, F_HEADERS)
 
-    # Send this request to the AML service and render the results on page
-    try:
-        # response = requests.post(URL, headers=HEADERS, data=body)
-        response = urllib.request.urlopen(req)
-        #print(response)
-        respdata = response.read()
-        result = json.loads(str(respdata, 'utf-8'))
-        result = do_something_pretty(result)
-        # result = json.dumps(result, indent=4, sort_keys=True)
-        return render_template(
-            'football.html',
-            title="This is the result from AzureML running our Football Draft Prediction:",
-            result=result)
+        # Send this request to the AML service and render the results on page
+        try:
+            # response = requests.post(URL, headers=HEADERS, data=body)
+            response = urllib.request.urlopen(req)
+            #print(response)
+            respdata = response.read()
+            result = json.loads(str(respdata, 'utf-8'))
+            result = do_something_pretty(result)
+            # result = json.dumps(result, indent=4, sort_keys=True)
+            return render_template(
+                'football.html',
+                title="This is the result from AzureML running our Football Draft Prediction:",
+                result=result)
 
-    # An HTTP error
-    except urllib.error.HTTPError as err:
-        result="The request failed with status code: " + str(err.code)
-        return render_template(
-            'football.html',
-            title='There was an error',
-            result=result)
-        #print(err)
+        # An HTTP error
+        except urllib.error.HTTPError as err:
+            result="The request failed with status code: " + str(err.code)
+            return render_template(
+                'football.html',
+                title='There was an error',
+                result=result)
+            #print(err)
 
     return render_template(
         'football.html',
         form = form,
         title = 'Run App',
         year=datetime.now().year,
-        message = 'Which conference should you go for?'
+        message = 'Will you be drafted?'
     )
 
 def do_something_pretty(jsondata):
