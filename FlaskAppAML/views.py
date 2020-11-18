@@ -96,10 +96,10 @@ def football():
 
     F_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ fball_key)}
 
-    form = SubmissionForm(request.form)
+    form = request.form
 
     # Form has been submitted
-    if request.method == 'POST' and form.validate():
+    if request.method == 'POST':
 
         # Plug in the data into a dictionary object 
         #  - data from the input form
@@ -136,7 +136,7 @@ def football():
             result = do_something_pretty(result)
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
-                'result.html',
+                'fballResult.html',
                 title="This is the result from AzureML running our Football Draft Prediction:",
                 result=result)
 
@@ -144,7 +144,7 @@ def football():
         except urllib.error.HTTPError as err:
             result="The request failed with status code: " + str(err.code)
             return render_template(
-                'result.html',
+                'fballResult.html',
                 title='There was an error',
                 result=result)
             #print(err)
@@ -152,7 +152,7 @@ def football():
     return render_template(
         'football.html',
         form = form,
-        title = 'Run App',
+        title = 'Football Draft Predictions',
         year=datetime.now().year,
         message = 'Will you be drafted?'
     )

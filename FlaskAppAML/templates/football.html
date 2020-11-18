@@ -5,15 +5,44 @@
 <form method=post>
     <dl>
         <p>
-            <!-- {{form.title}} -->
+            {{form.title}}
         </p>
-
-        <p>
-            <h3>Position</h3> 
+        <div class="form-group">
+            <h3>Position</h3>
+            <label for="pos">Enter the position you play:</label><br>
+            <input type="text" name="position" id="pos" class="form-control" placeholder="QB/WR/RB...">
+        </div>
+        <div class="form-group">
+            <h3>School</h3>
+            <label for="sch">Enter the school you play at:</label><br>
+            <input type="text" name="school" id="sch" class="form-control" placeholder="UCLA/Temple/Oklahoma...">
+        </div>
+        <div class="form-group">
+            <h3>Height</h3>
+            <label for="ht">Enter your height:</label><br>
+            <input type="text" name="height" id="ht" class="form-control" placeholder="6'4">
+        </div>
+        <div class="form-group">
+            <h3>Weight</h3>
+            <label for="wt">Enter your weight:</label><br>
+            <input type="text" name="weight" id="wt" class="form-control" placeholder="225">
+        </div>
+        <div class="form-group">
+            <h3>40 yard (Optional)</h3>
+            <label for="40yd">Enter your 40 yard time:</label><br>
+            <input type="text" name="40yd" id="40yd" class="form-control" placeholder="4.92">
+        </div>
+        <div class="form-group">
+            <h3>Vertical (Optional)</h3>
+            <label for="vert">Enter your vertical:</label><br>
+            <input type="text" name="vertical" id="vert" class="form-control" placeholder="35.5">
+        </div>
+        <!-- <p>
+             
             Enter the position you play:<br /><br />
             {{form.text}}
-        </p>
+        </p> -->
     </dl>
-    <p><input type="submit" value="submit"</p>
+    <p><input type="submit" value="Submit"</p>
  </form>
 {% endblock%}
