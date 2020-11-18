@@ -85,10 +85,6 @@
                                             <h4 class="text-black">Machine Learning</h4>
                                             <p class="mb-0 text-black-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
                                             <hr class="d-none d-lg-block mb-0 mr-0" />
-                                            <div class="btn-group">
-                                                <a class="btn" href = "{{ url_for ('basketball') }}">Basketball</a>
-                                                <a class="btn" href = "{{ url_for ('football') }}">Football</a>
-                                            </div>
                                         </div>
                                     </div>  
                                 </div>
@@ -98,7 +94,10 @@
                 </div>
             </div>
         </div>
-        
+        <div class="btn-group">
+            <a class="btn" href = "{{ url_for ('basketball') }}">Basketball</a>
+            <a class="btn" href = "{{ url_for ('football') }}">Football</a>
+        </div>
     </section>
     <!-- Contact-->
     <section class="contact-section bg-black" id= "contact">
