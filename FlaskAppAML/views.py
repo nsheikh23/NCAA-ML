@@ -9,7 +9,7 @@ from datetime import datetime
 import json
 import urllib.request
 import os
-import rdsconnection as db
+# import rdsconnection as db
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/home', methods=['GET', 'POST'])
