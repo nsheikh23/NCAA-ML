@@ -68,7 +68,7 @@ def basketball():
             result = do_something_pretty(result)
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
-                'basketball.html',
+                'result.html',
                 title="This is the result from AzureML running our Basketball Draft Prediction:",
                 result=result)
 
@@ -76,7 +76,7 @@ def basketball():
         except urllib.error.HTTPError as err:
             result="The request failed with status code: " + str(err.code)
             return render_template(
-                'basketball.html',
+                'result.html',
                 title='There was an error',
                 result=result)
             #print(err)
@@ -136,7 +136,7 @@ def football():
             result = do_something_pretty(result)
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
-                'football.html',
+                'result.html',
                 title="This is the result from AzureML running our Football Draft Prediction:",
                 result=result)
 
@@ -144,7 +144,7 @@ def football():
         except urllib.error.HTTPError as err:
             result="The request failed with status code: " + str(err.code)
             return render_template(
-                'football.html',
+                'result.html',
                 title='There was an error',
                 result=result)
             #print(err)
