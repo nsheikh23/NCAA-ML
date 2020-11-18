@@ -91,8 +91,8 @@ def basketball():
 
 @app.route('/football')
 def football():
-    fball_key = os.environ.get('API_KEY', "3ykY3j9WZDYvS0Dvf5VoJ1kA0yVT5HVzT+foY4SzKvD6LJhHoysBjlEQWaOniNQCGqsjKrytONq1kdxEWo3Scg==")
-    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/91af20abfc58455182eaaa615d581c59/services/da7cdb9359a443f0abdef36d30ce8f1c/execute?api-version=2.0&details=true")
+    fball_key = os.environ.get('API_KEY', "Jur+v2F7MlT70r85jA7F3Ntt48vBoSkZGlg67g7VihkF+/jNwxI8mSOpqY1ADz4nz5+HUMLLB6LJ2gaDGalJwg==")
+    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/1bd82c355c1447d591afec4715a4b045/services/27f2c06eb9ad492db435e9999a272af4/execute?api-version=2.0&format=swagger")
 
     F_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ fball_key)}
 
@@ -104,24 +104,31 @@ def football():
         # Plug in the data into a dictionary object 
         #  - data from the input form
         #  - text data must be converted to lowercase
-        data =  {
-              "Inputs": {
-                "input1": {
-                  "ColumnNames": ["gender", "age", "size", "weight"],
-                  "Values": [ [
-                      0,
-                      1,
-                      form.title.data.lower(),
-                      0
-
-                    ]
-                  ]
-                }
-              },
-              "GlobalParameters": {}
+        data = {
+        "Inputs": {
+                "input1":
+                [
+                    {
+                            'Pos': "",   
+                            'School': "",   
+                            'Player': "",   
+                            'Ht': "",   
+                            'Wt': "1",   
+                            '40yd': "1",   
+                            'Vertical': "1",   
+                            'Bench': "1",   
+                            'Broad Jump': "1",   
+                            '3Cone': "1",   
+                            'Shuttle': "1",   
+                            'DraftedPickYear': "",   
+                            'Drafted': "",   
+                    }
+                ],
+            },
+            "GlobalParameters":  {
             }
+        }
 
-        # Serialize the input data into json string
         body = str.encode(json.dumps(data))
     
         req = urllib.request.Request(fball_url, body, F_HEADERS)
