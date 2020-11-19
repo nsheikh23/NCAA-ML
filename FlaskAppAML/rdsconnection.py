@@ -12,8 +12,8 @@ conn = psycopg2.connect(
 
 
 # This function will return all rows from the table in the table requested
-def get_all(table):
+def get_all():
     cur=conn.cursor()
-    cur.execute(f"SELECT * FROM {table}")
+    cur.execute(f"SELECT * FROM nbadraft")
     details = cur.fetchall()
     return details

@@ -5,21 +5,35 @@ Routes and views for the flask application.
 from flask import render_template, request
 from FlaskAppAML import app
 from FlaskAppAML.forms import SubmissionForm
+from FlaskAppAML import rdsconnection as db
 from datetime import datetime
 import json
 import urllib.request
 import os
-# import rdsconnection as db
+
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/home', methods=['GET', 'POST'])
 def home():
-    # details = db.get_all()
-    # # print(details)
-    # for detail in details:
-    #     var = detail
-    
+
     return render_template("index.html")
+
+@app.route('/DB')
+# table = 'nbadraft'
+def DB():
+    details = db.get_all()
+    print(details)
+    row = []
+    for detail in details:
+        var = detail
+        row.append(var)
+    result = pretty_table(row)
+    return render_template(
+        "DB.html",
+        year=datetime.now().year, 
+        result=result)
+    
+    
 
 @app.route('/basketball')
 def basketball():
@@ -192,3 +206,19 @@ def do_something_pretty(jsondata):
     #return tablestr % data
     return output
 
+# def pretty_table(jsondata):
+#     """We want to process the DB json result to be more human readable and understandable"""
+
+#     valuelen = len(jsondata[0])
+
+#     data = jsondata
+
+#     # Build a placeholder for the fields
+#     for i in data:
+#         repstr = f'<tr><td>{data[i][0]}</td><td>{data[i][1]}</td><td>{data[i][2]}</td><td>{data[i][3]}</td></tr>' * (valuelen-1)
+#     print(repstr)
+#     # output=f'For the provided information our algorithm would calculate a draft probability of: {chance}'
+#     # Build the entire html table for the results data representation
+#     tablestr = '<table border="1"><tr><th>Pick</th><th>Name</th><th>Conference</th><th>College</th></tr>'+ repstr + "</table>"
+#     return (tablestr % data)
+#     # return output
