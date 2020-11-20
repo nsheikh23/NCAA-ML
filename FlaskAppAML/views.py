@@ -242,7 +242,7 @@ def fball_pretty(jsondata):
     #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
     # print(repstr)
     fball=f'For the provided information our algorithm would calculate a draft probability of: {chance} %'
-    bball=f'For the provided information our algorithm would suggest going to conference: {prediction} %'
+    # bball=f'For the provided information our algorithm would suggest going to conference: {prediction} %'
     # Build the entire html table for the results data representation
     #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
     #return tablestr % data
