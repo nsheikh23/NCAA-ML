@@ -5,7 +5,7 @@ Routes and views for the flask application.
 from flask import render_template, request
 from FlaskAppAML import app
 from FlaskAppAML.forms import SubmissionForm
-from FlaskAppAML import rdsconnection as db
+# from FlaskAppAML import rdsconnection as db
 from datetime import datetime
 import json
 import urllib.request
@@ -16,40 +16,40 @@ import os
 @app.route('/home', methods=['GET', 'POST'])
 def home():
 
-    return render_template("index.html")
+    return render_template("index.html", year=datetime.now().year)
 
-@app.route('/DB')
-def DB():
-    # Table name you want to view
-    table = 'nbadraft'
+# @app.route('/DB')
+# def DB():
+#     # Table name you want to view
+#     table = 'nbadraft'
 
-    # Extracting all the data from PostgreSQL
-    details = db.get_all(table)
-    # print(details)
+#     # Extracting all the data from PostgreSQL
+#     # details = db.get_all(table)
+#     # print(details)
     
-    table = "<table>\n"
+#     table = "<table>\n"
 
-    # Creating the table's row data
-    for line in details:
-        print(line)
-        row = line.split(",")
-        table += "  <tr>\n"
-        for column in row:
-            table += "      <td>{0}</td>\n".format(column.strip())
-        table += "  </tr>\n"
+#     # Creating the table's row data
+#     for line in details:
+#         print(line)
+#         row = line.split(",")
+#         table += "  <tr>\n"
+#         for column in row:
+#             table += "      <td>{0}</td>\n".format(column.strip())
+#         table += "  </tr>\n"
 
-    table += "</table"
-        # var = detail
-        # row.append(var)
-    # result = pretty_table(row)
-    return render_template(
-        "DB.html",
-        year=datetime.now().year, 
-        result=table)
+#     table += "</table"
+#         # var = detail
+#         # row.append(var)
+#     # result = pretty_table(row)
+#     return render_template(
+#         "DB.html",
+#         year=datetime.now().year, 
+#         result=table)
     
     
 
-@app.route('/basketball')
+@app.route('/basketball', methods=['GET', 'POST'])
 def basketball():
     bball_key = os.environ.get('API_KEY', "J/YazlXkBmLjs+GGrAst0pfD6hxd3l5FQCQ6I7g4pMs/3Dv898Xf/Ra6qjm3sQ72utOXCyC3enYO/1rT1cQytg==")
     bball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/0f1aebe5b0944e9c831c80acc2aa6ee7/services/4c90f9399d64471bb0dc293c2c00b5e0/execute?api-version=2.0&format=swagger")
@@ -119,11 +119,11 @@ def basketball():
             #print(response)
             respdata = response.read()
             result = json.loads(str(respdata, 'utf-8'))
-            result = do_something_pretty(result)
+            result = bball_pretty(result)
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
-                'result.html',
-                title="This is the result from AzureML running our Basketball Draft Prediction:",
+                'bballResult.html',
+                title="This is the result from AzureML running our Basketball Conference Prediction:",
                 year=datetime.now().year,
                 result=result)
 
@@ -131,7 +131,7 @@ def basketball():
         except urllib.error.HTTPError as err:
             result="The request failed with status code: " + str(err.code)
             return render_template(
-                'result.html',
+                'bballResult.html',
                 title='There was an error',
                 year=datetime.now().year,
                 result=result)
@@ -194,7 +194,7 @@ def football():
             print(response)
             respdata = response.read()
             result = json.loads(str(respdata, 'utf-8'))
-            result = do_something_pretty(result)
+            result = fball_pretty(result)
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
                 'fballResult.html',
@@ -220,7 +220,7 @@ def football():
         message = 'Will you be drafted?'
     )
 
-def do_something_pretty(jsondata):
+def fball_pretty(jsondata):
     """We want to process the AML json result to be more human readable and understandable"""
     import itertools # for flattening a list of tuples below
 
@@ -242,25 +242,36 @@ def do_something_pretty(jsondata):
     # Build a placeholder for the cluster#,distance values
     #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
     # print(repstr)
-    output=f'For the provided information our algorithm would calculate a draft probability of: {chance} %'
+    fball=f'For the provided information our algorithm would calculate a draft probability of: {chance} %'
+    bball=f'For the provided information our algorithm would suggest going to conference: {prediction} %'
     # Build the entire html table for the results data representation
     #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
     #return tablestr % data
-    return output
+    return fball
 
-# def pretty_table(jsondata):
-#     """We want to process the DB json result to be more human readable and understandable"""
+def bball_pretty(jsondata):
+    """We want to process the AML json result to be more human readable and understandable"""
+    import itertools # for flattening a list of tuples below
 
-#     valuelen = len(jsondata[0])
+    # We only want the first array from the array of arrays under "Value" 
+    # - it's cluster assignment and distances from all centroid centers from k-means model
+    prediction = jsondata["Results"]["output1"][0]['Scored Labels']
+    #valuelen = len(value)
+    print(prediction)
+    # Convert values (a list) to a list of tuples [(cluster#,distance),...]
+    # valuetuple = list(zip(range(valuelen-1), value[1:(valuelen)]))
+    # Convert the list of tuples to one long list (flatten it)
+    # valuelist = list(itertools.chain(*valuetuple))
 
-#     data = jsondata
+    # Convert to a tuple for the list
+    # data = tuple(list(value[0]) + valuelist)
 
-#     # Build a placeholder for the fields
-#     for i in data:
-#         repstr = f'<tr><td>{data[i][0]}</td><td>{data[i][1]}</td><td>{data[i][2]}</td><td>{data[i][3]}</td></tr>' * (valuelen-1)
-#     print(repstr)
-#     # output=f'For the provided information our algorithm would calculate a draft probability of: {chance}'
-#     # Build the entire html table for the results data representation
-#     tablestr = '<table border="1"><tr><th>Pick</th><th>Name</th><th>Conference</th><th>College</th></tr>'+ repstr + "</table>"
-#     return (tablestr % data)
-#     # return output
+    # Build a placeholder for the cluster#,distance values
+    #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
+    # print(repstr)
+    bball=f'For the provided information our algorithm would suggest going to conference: {prediction}'
+    # Build the entire html table for the results data representation
+    #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
+    #return tablestr % data
+    return bball
+
