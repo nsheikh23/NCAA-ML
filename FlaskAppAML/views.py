@@ -19,55 +19,95 @@ def home():
     return render_template("index.html")
 
 @app.route('/DB')
-# table = 'nbadraft'
 def DB():
-    details = db.get_all()
-    print(details)
-    row = []
-    for detail in details:
-        var = detail
-        row.append(var)
-    result = pretty_table(row)
+    # Table name you want to view
+    table = 'nbadraft'
+
+    # Extracting all the data from PostgreSQL
+    details = db.get_all(table)
+    # print(details)
+    
+    table = "<table>\n"
+
+    # Creating the table's row data
+    for line in details:
+        print(line)
+        row = line.split(",")
+        table += "  <tr>\n"
+        for column in row:
+            table += "      <td>{0}</td>\n".format(column.strip())
+        table += "  </tr>\n"
+
+    table += "</table"
+        # var = detail
+        # row.append(var)
+    # result = pretty_table(row)
     return render_template(
         "DB.html",
         year=datetime.now().year, 
-        result=result)
+        result=table)
     
     
 
 @app.route('/basketball')
 def basketball():
-    bball_key = os.environ.get('API_KEY', "3ykY3j9WZDYvS0Dvf5VoJ1kA0yVT5HVzT+foY4SzKvD6LJhHoysBjlEQWaOniNQCGqsjKrytONq1kdxEWo3Scg==")
-    bball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/91af20abfc58455182eaaa615d581c59/services/da7cdb9359a443f0abdef36d30ce8f1c/execute?api-version=2.0&details=true")
+    bball_key = os.environ.get('API_KEY', "J/YazlXkBmLjs+GGrAst0pfD6hxd3l5FQCQ6I7g4pMs/3Dv898Xf/Ra6qjm3sQ72utOXCyC3enYO/1rT1cQytg==")
+    bball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/0f1aebe5b0944e9c831c80acc2aa6ee7/services/4c90f9399d64471bb0dc293c2c00b5e0/execute?api-version=2.0&format=swagger")
     
     B_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ bball_key)}
 
-    form = SubmissionForm(request.form)
+    form = request.form
 
     # Form has been submitted
-    if request.method == 'POST' and form.validate():
+    if request.method == 'POST':
 
         # Plug in the data into a dictionary object 
         #  - data from the input form
         #  - text data must be converted to lowercase
-        data =  {
-              "Inputs": {
-                "input1": {
-                  "ColumnNames": ["gender", "age", "size", "weight"],
-                  "Values": [ [
-                      0,
-                      1,
-                      form.title.data.lower(),
-                      0
-
-                    ]
-                  ]
-                }
-              },
-              "GlobalParameters": {}
+        data = {
+        "Inputs": {
+                "input1":
+                [
+                    {
+                            'player': "",
+                            'position': "",
+                            'team': "",
+                            'gp': "1",
+                            'mpg': "1",
+                            'fgm': "1",
+                            'fga': "1",
+                            'fg_pct': "1",
+                            'threepm': "1",
+                            'threepa': "1",
+                            'three_pct': "1",
+                            'ftm': "1",
+                            'fta': "1",
+                            'ft_pct': "1",
+                            'tov': "1",
+                            'pf': "1",
+                            'orb': "1",
+                            'drb': "1",
+                            'rpg': "1",
+                            'apg': "1",
+                            'spg': "1",
+                            'bpg': "1",
+                            'ppg': "1",
+                            'pick': "1",
+                            'conference': "",
+                            'college': "",
+                            'School': "",
+                            'Country': "",
+                            'State': "",
+                            'Latitude': "1",
+                            'Longitude': "1",
+                            'Revenue_Men': "",
+                            'Expenses_Men': "",
+                    }
+                ],
+                },
+            "GlobalParameters":  {
             }
-
-        # Serialize the input data into json string
+        }
         body = str.encode(json.dumps(data))
     
         req = urllib.request.Request(bball_url, body, B_HEADERS)
@@ -84,6 +124,7 @@ def basketball():
             return render_template(
                 'result.html',
                 title="This is the result from AzureML running our Basketball Draft Prediction:",
+                year=datetime.now().year,
                 result=result)
 
         # An HTTP error
@@ -92,6 +133,7 @@ def basketball():
             return render_template(
                 'result.html',
                 title='There was an error',
+                year=datetime.now().year,
                 result=result)
             #print(err)
 
@@ -105,8 +147,8 @@ def basketball():
 
 @app.route('/football', methods=['GET', 'POST'])
 def football():
-    fball_key = os.environ.get('API_KEY', "Jur+v2F7MlT70r85jA7F3Ntt48vBoSkZGlg67g7VihkF+/jNwxI8mSOpqY1ADz4nz5+HUMLLB6LJ2gaDGalJwg==")
-    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/1bd82c355c1447d591afec4715a4b045/services/27f2c06eb9ad492db435e9999a272af4/execute?api-version=2.0&format=swagger")
+    fball_key = os.environ.get('API_KEY', "CCjGbhsuK+z6Xdi2E2t6juCNcups8XwufEHOqeJEIki6lUaQaQVHKN7ctWyy+OAzGI9HZg5zKFx2ZXRBGtD1cA==")
+    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/1bd82c355c1447d591afec4715a4b045/services/55a41d1f440c478b9318495a8afd113b/execute?api-version=2.0&format=swagger")
 
     F_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ fball_key)}
 
@@ -120,22 +162,20 @@ def football():
         #  - text data must be converted to lowercase
         data = {
         "Inputs": {
-                "input1": 
+                "input1":
                 [
                     {
-                            'Pos': "",   
-                            'School': "",   
-                            'Player': "",   
-                            'Ht': "",   
-                            'Wt': "1",   
-                            '40yd': "1",   
-                            'Vertical': "1",   
+                            'Position': "QB",   
+                            'School': "UCLA",   
+                            'Height': "76",   
+                            'Weight': "226",   
+                            '40yd': "4.92",   
+                            'Vertical': "31",   
                             'Bench': "1",   
-                            'Broad Jump': "1",   
-                            '3Cone': "1",   
-                            'Shuttle': "1",   
-                            'DraftedPickYear': "",   
-                            'Drafted': "",   
+                            'Broad Jump': "111",   
+                            '3Cone': "7.09",   
+                            'Shuttle': "4.28",   
+                            'Drafted': "Y",   
                     }
                 ],
             },
@@ -159,6 +199,7 @@ def football():
             return render_template(
                 'fballResult.html',
                 title="This is the result from AzureML running our Football Draft Prediction:",
+                year=datetime.now().year,
                 result=result)
 
         # An HTTP error
@@ -167,6 +208,7 @@ def football():
             return render_template(
                 'fballResult.html',
                 title='There was an error',
+                year=datetime.now().year,
                 result=result)
         print(err)
 
@@ -185,7 +227,7 @@ def do_something_pretty(jsondata):
     # We only want the first array from the array of arrays under "Value" 
     # - it's cluster assignment and distances from all centroid centers from k-means model
     prediction = jsondata["Results"]["output1"][0]['Scored Labels']
-    chance = jsondata["Results"]["output1"][0]['Scored Probabilities']
+    chance = jsondata["Results"]["output1"][0]['Scored Probabilities for Class "Y"']
     #valuelen = len(value)
     print(prediction)
     print(chance)
@@ -200,7 +242,7 @@ def do_something_pretty(jsondata):
     # Build a placeholder for the cluster#,distance values
     #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
     # print(repstr)
-    output=f'For the provided information our algorithm would calculate a draft probability of: {chance}'
+    output=f'For the provided information our algorithm would calculate a draft probability of: {chance} %'
     # Build the entire html table for the results data representation
     #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
     #return tablestr % data
