@@ -4,15 +4,26 @@
 <h2>Determine If You Will Be Drafted Or Not</h2>
 <form method=post>
     <dl>
-        <p>
-            <!-- {{form.title}} -->
-        </p>
-
-        <p>
-            <h3>Position</h3> 
-            Enter the position you play:<br /><br />
-            {{form.text}}
-        </p>
+        <div class="form-group">
+            <h3>Position</h3>
+            <label for="position">Enter the position you play (only one):</label><br>
+            {{form.position(placeholder="G/F/C...")}}
+        </div>
+        <div class="form-group">
+            <h3>Games Played</h3>
+            <label for="gp">Enter the number of games you played:</label><br>
+            {{form.gp(placeholder="Between 24-38")}}
+        </div>
+        <div class="form-group">
+            <h3>Field Goals Made</h3>
+            <label for="fgm">Enter your FGM:</label><br>
+            {{form.fgm(placeholder="Between 3.5-7.1")}}
+        </div>
+        <div class="form-group">
+            <h3>3 Points Made</h3>
+            <label for="three">Enter your 3PM:</label><br>
+            {{form.three(placeholder="Between 1.2-3.2")}}
+        </div>
     </dl>
     <p><input type="submit" value="submit"</p>
  </form>

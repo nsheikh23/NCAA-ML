@@ -1,7 +1,14 @@
-from wtforms import Form, StringField, TextAreaField, validators
+from wtforms import Form, StringField, FloatField, IntegerField, validators
 
 
 class SubmissionForm(Form):
-    title = StringField('Title', [validators.Length(min=2, max=30)])
-    category = StringField('Category', [validators.Length(min=0, max=30)])
-    text = TextAreaField('Text', [validators.Length(min=1, max=500)])
+    position = StringField('position', [validators.Length(min=1, max=30)])
+    school = StringField('school', [validators.Length(min=1, max=30)])
+    height = StringField('height', [validators.Length(min=1, max=5)])
+    weight = StringField('weight', [validators.Length(min=1, max=5)])
+    bench = FloatField('bench', [validators.Length(min=1, max=5)])
+    vert = FloatField('vert', [validators.Length(min=1, max=5)])
+    broad = IntegerField('broad', [validators.Length(min=1, max=5)])
+    gp = IntegerField('gp', [validators.Length(min=1, max=5)])
+    fgm = FloatField('fgm', [validators.Length(min=1, max=5)])
+    three = FloatField('three', [validators.Length(min=1, max=5)])

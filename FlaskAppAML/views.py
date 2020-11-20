@@ -56,10 +56,10 @@ def basketball():
     
     B_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ bball_key)}
 
-    form = request.form
-
+    form = SubmissionForm(request.form)
+    
     # Form has been submitted
-    if request.method == 'POST':
+    if request.method == 'POST' and form.validate():
 
         # Plug in the data into a dictionary object 
         #  - data from the input form
@@ -70,14 +70,14 @@ def basketball():
                 [
                     {
                             'player': "",
-                            'position': "",
+                            'position': form.position.data.upper(),
                             'team': "",
-                            'gp': "1",
+                            'gp': form.gp.data,
                             'mpg': "1",
-                            'fgm': "1",
+                            'fgm': form.fgm.data,
                             'fga': "1",
                             'fg_pct': "1",
-                            'threepm': "1",
+                            'threepm': form.three.data,
                             'threepa': "1",
                             'three_pct': "1",
                             'ftm': "1",
@@ -147,35 +147,34 @@ def basketball():
 
 @app.route('/football', methods=['GET', 'POST'])
 def football():
-    fball_key = os.environ.get('API_KEY', "CCjGbhsuK+z6Xdi2E2t6juCNcups8XwufEHOqeJEIki6lUaQaQVHKN7ctWyy+OAzGI9HZg5zKFx2ZXRBGtD1cA==")
-    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/1bd82c355c1447d591afec4715a4b045/services/55a41d1f440c478b9318495a8afd113b/execute?api-version=2.0&format=swagger")
+    fball_key = os.environ.get('API_KEY', "mjYhDRm7ZyrlHWvAE726VK30whTi+2zu4uxLfLRVCVcryfCXgtwFiFOlfXVmNfW0Gch3QmF1YSIAd9xXod5YtA==")
+    fball_url = os.environ.get('URL', "https://ussouthcentral.services.azureml.net/workspaces/1bd82c355c1447d591afec4715a4b045/services/7a19aada667c40a1851c13ab20d7df38/execute?api-version=2.0&format=swagger")
 
     F_HEADERS = {'Content-Type':'application/json', 'Authorization':('Bearer '+ fball_key)}
 
-    form = request.form
-
+    form = SubmissionForm(request.form)
+    
     # Form has been submitted
-    if request.method == 'POST':
+    if request.method == 'POST' and form.validate():
 
         # Plug in the data into a dictionary object 
         #  - data from the input form
-        #  - text data must be converted to lowercase
         data = {
         "Inputs": {
                 "input1":
                 [
                     {
-                            'Position': "QB",   
-                            'School': "UCLA",   
-                            'Height': "76",   
-                            'Weight': "226",   
-                            '40yd': "4.92",   
-                            'Vertical': "31",   
-                            'Bench': "1",   
-                            'Broad Jump': "111",   
-                            '3Cone': "7.09",   
-                            'Shuttle': "4.28",   
-                            'Drafted': "Y",   
+                            'Position': form.position.data.upper(),   
+                            'School': form.school.data,   
+                            'Height': form.height.data,   
+                            'Weight': form.weight.data,   
+                            '40yd': "0",   
+                            'Vertical': form.vert.data,   
+                            'Bench': form.bench.data,   
+                            'Broad Jump': form.broad.data,   
+                            '3Cone': "0",   
+                            'Shuttle': "0",   
+                            'Drafted': "",   
                     }
                 ],
             },
