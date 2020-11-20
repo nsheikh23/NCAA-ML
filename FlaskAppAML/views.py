@@ -11,7 +11,6 @@ import json
 import urllib.request
 import os
 
-
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/home', methods=['GET', 'POST'])
 def home():
@@ -59,7 +58,7 @@ def basketball():
     form = SubmissionForm(request.form)
     
     # Form has been submitted
-    if request.method == 'POST' and form.validate():
+    if request.method == 'POST':
 
         # Plug in the data into a dictionary object 
         #  - data from the input form
@@ -155,7 +154,7 @@ def football():
     form = SubmissionForm(request.form)
     
     # Form has been submitted
-    if request.method == 'POST' and form.validate():
+    if request.method == 'POST':
 
         # Plug in the data into a dictionary object 
         #  - data from the input form
@@ -225,10 +224,11 @@ def fball_pretty(jsondata):
 
     # We only want the first array from the array of arrays under "Value" 
     # - it's cluster assignment and distances from all centroid centers from k-means model
-    prediction = jsondata["Results"]["output1"][0]['Scored Labels']
+    # prediction = jsondata["Results"]["output1"][0]['Scored Labels']
     chance = jsondata["Results"]["output1"][0]['Scored Probabilities for Class "Y"']
+    pct = round(float(chance) * 100,4)
     #valuelen = len(value)
-    print(prediction)
+    # print(prediction)
     print(chance)
     # Convert values (a list) to a list of tuples [(cluster#,distance),...]
     # valuetuple = list(zip(range(valuelen-1), value[1:(valuelen)]))
@@ -241,7 +241,7 @@ def fball_pretty(jsondata):
     # Build a placeholder for the cluster#,distance values
     #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
     # print(repstr)
-    fball=f'For the provided information our algorithm would calculate a draft probability of: {chance} %'
+    fball=f'For the provided information our algorithm would calculate a draft probability of: {pct} %'
     # bball=f'For the provided information our algorithm would suggest going to conference: {prediction} %'
     # Build the entire html table for the results data representation
     #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
@@ -268,7 +268,7 @@ def bball_pretty(jsondata):
     # Build a placeholder for the cluster#,distance values
     #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
     # print(repstr)
-    bball=f'For the provided information our algorithm would suggest going to conference: {prediction}'
+    bball=f'{prediction}'
     # Build the entire html table for the results data representation
     #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
     #return tablestr % data
