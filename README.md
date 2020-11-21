@@ -10,8 +10,8 @@ The purpose of this project is to:
 1. Visualize NCAA Basketball and Football programs across the US
 2. Analyze state budgets and how they may impact sports programs
 3. Build Machine Learning models that predict:
-  a. Which conference should you go to in order to be drafted by NBA?
-  b. What is the probability of you getting drafted in the NFL?
+  * Which conference should you go to in order to be drafted by NBA?
+  * What is the probability of you getting drafted in the NFL?
 4. Host a serverless app
 
 ## Methods Used
