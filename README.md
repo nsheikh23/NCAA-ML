@@ -21,9 +21,10 @@ The purpose of this project is to:
 
 ### Technologies
 * Python
-* Pandas, Jupyter
+* Flask, Pandas, Jupyter
 * PostgreSQL
 * Google Colab
 * Tableau
 * Microsoft Azure ML
 * HTML/CSS/Bootstrap
+* AWS services: S3, RDS, Lambda, API gateway
