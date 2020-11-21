@@ -196,7 +196,7 @@ def football():
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
                 'fballResult.html',
-                title="This is the result from AzureML running our Football Draft Prediction:",
+                title="This is the result from AzureML running our Football Draft Prediction",
                 year=datetime.now().year,
                 result=result)
 
