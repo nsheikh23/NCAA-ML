@@ -17,6 +17,16 @@ def home():
 
     return render_template("index.html", year=datetime.now().year)
 
+@app.route('/fballmap', methods=['GET', 'POST'])
+def fballmap():
+
+    return render_template("fballmap.html", year=datetime.now().year)
+
+@app.route('/bballmap', methods=['GET', 'POST'])
+def bballmap():
+
+    return render_template("bballmap.html", year=datetime.now().year)
+
 # @app.route('/DB')
 # def DB():
 #     # Table name you want to view
@@ -196,7 +206,7 @@ def football():
             # result = json.dumps(result, indent=4, sort_keys=True)
             return render_template(
                 'fballResult.html',
-                title="This is the result from AzureML running our Football Draft Prediction",
+                title="This is the result from AzureML running our Football Draft Prediction:",
                 year=datetime.now().year,
                 result=result)
 
