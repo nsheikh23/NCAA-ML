@@ -170,7 +170,7 @@ def football():
                             '40yd': "0",   
                             'Vertical': form.vert.data,   
                             'Bench': form.bench.data,   
-                            'Broad Jump': form.broad.data,   
+                            'Broad Jump': "0",   
                             '3Cone': "0",   
                             'Shuttle': "0",   
                             'Drafted': "",   
@@ -220,57 +220,20 @@ def football():
 
 def fball_pretty(jsondata):
     """We want to process the AML json result to be more human readable and understandable"""
-    import itertools # for flattening a list of tuples below
-
-    # We only want the first array from the array of arrays under "Value" 
-    # - it's cluster assignment and distances from all centroid centers from k-means model
-    # prediction = jsondata["Results"]["output1"][0]['Scored Labels']
+    
     chance = jsondata["Results"]["output1"][0]['Scored Probabilities for Class "Y"']
     pct = round(float(chance) * 100,4)
-    #valuelen = len(value)
-    # print(prediction)
-    print(chance)
-    # Convert values (a list) to a list of tuples [(cluster#,distance),...]
-    # valuetuple = list(zip(range(valuelen-1), value[1:(valuelen)]))
-    # Convert the list of tuples to one long list (flatten it)
-    # valuelist = list(itertools.chain(*valuetuple))
+    # print(pct)
 
-    # Convert to a tuple for the list
-    # data = tuple(list(value[0]) + valuelist)
-
-    # Build a placeholder for the cluster#,distance values
-    #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
-    # print(repstr)
     fball=f'For the provided information our algorithm would calculate a draft probability of: {pct} %'
-    # bball=f'For the provided information our algorithm would suggest going to conference: {prediction} %'
-    # Build the entire html table for the results data representation
-    #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
-    #return tablestr % data
     return fball
 
 def bball_pretty(jsondata):
     """We want to process the AML json result to be more human readable and understandable"""
-    import itertools # for flattening a list of tuples below
 
-    # We only want the first array from the array of arrays under "Value" 
-    # - it's cluster assignment and distances from all centroid centers from k-means model
     prediction = jsondata["Results"]["output1"][0]['Scored Labels']
-    #valuelen = len(value)
-    print(prediction)
-    # Convert values (a list) to a list of tuples [(cluster#,distance),...]
-    # valuetuple = list(zip(range(valuelen-1), value[1:(valuelen)]))
-    # Convert the list of tuples to one long list (flatten it)
-    # valuelist = list(itertools.chain(*valuetuple))
+    # print(prediction)
 
-    # Convert to a tuple for the list
-    # data = tuple(list(value[0]) + valuelist)
-
-    # Build a placeholder for the cluster#,distance values
-    #repstr = '<tr><td>%d</td><td>%s</td></tr>' * (valuelen-1)
-    # print(repstr)
     bball=f'{prediction}'
-    # Build the entire html table for the results data representation
-    #tablestr = 'Cluster assignment: %s<br><br><table border="1"><tr><th>Cluster</th><th>Distance From Center</th></tr>'+ repstr + "</table>"
-    #return tablestr % data
     return bball
 
