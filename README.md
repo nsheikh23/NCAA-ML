@@ -1,7 +1,7 @@
 # NCAA-Machine Learning
 #### -- Project status: [Active]
 
-![NCAA](FlaskAppAML/static/assets/img/NCAAtrophy.JPG)
+![NCAA](static/assets/img/NCAAtrophy.JPG)
 
 The app can be accessed at: https://ncaa-ml.herokuapp.com/
 
