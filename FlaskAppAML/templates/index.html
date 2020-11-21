@@ -19,14 +19,13 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Masthead-->
     <header class="masthead" style="background-image: url(https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/header.jpg);">
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Predicting the Pros</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Predict the Conference that would give you the best chance to getting drafted to the NBA</h2>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Or Predict Your Probability of getting drafted to the NFL</h2>
+                <h2 class="text-white mx-auto mt-2 mb-5">Do you have what it takes to make it to the big leagues?</h2>
                 <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
             </div>
         </div>
@@ -38,9 +37,9 @@
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-white mb-4">Background</h2>
                     <p class="text-white-50">
-                        We have taken draft data from the NFL and NBA, and college stats for basketball and football between the years of 2014 and 2019
+                        We have taken draft data from the NBA and NFL, and college stats for basketball and football between the years of 2014 and 2019
                         to create a predictive model by utilizing Machine Learning.
-                        <a href="https://expertsystem.com/machine-learning-definition/">Machine Learning</a>
+                        <a href="https://expertsystem.com/machine-learning-definition/" target="_blank">Machine Learning</a>
                         is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.
                     </p>
                 </div>
@@ -60,8 +59,13 @@
                                 <div class="d-flex h-100">
                                     <div class="project-text w-100 my-auto text-center text-lg-left">
                                         <h4 class="text-white">Geographical Data</h4>
-                                        <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                        <p class="mb-0 text-white-50">Below is a geographical representation of State & School Revenue and Expenses as it relates to college basketball and football.</p>
                                         <hr class="d-none d-lg-block mb-0 ml-0" />
+                                        <p class="mb-0 text-white-50">For more detail on each sport click on the buttons:</p>
+                                        <div class="btn-group">
+                                            <a class="btn text-white" href = "{{ url_for ('bballmap') }}">Basketball</a>
+                                            <a class="btn text-white" href = "{{ url_for ('fballmap') }}">Football</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +106,8 @@
                                     <div class="d-flex h-100">
                                         <div class="project-text w-100 my-auto text-center text-lg-right">
                                             <h4 class="text-black">Machine Learning</h4>
-                                            <p class="mb-0 text-black-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                            <p class="mb-0 text-black-50">Predict the Conference that will give you the best change to make it into NBA</p>
+                                            <p class="mb-0 text-black-50">Or Predict your probability of getting drafted into NFL</p>
                                             <hr class="d-none d-lg-block mb-0 mr-0" />
                                             <div class="btn-group">
                                                 <a class="btn" href = "{{ url_for ('basketball') }}">Basketball</a>
@@ -132,8 +137,8 @@
                             <h4 class="text-uppercase m-0">Dominique Dunning</h4>
                             <hr class="my-4" />
                             <div class="small text-black-50">niquedunning5@gmail.com</div>
-                            <a href="https://www.linkedin.com/in/dominique-dunning-0b27037a/"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
-                            <a href="https://github.com/niquedunning/"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/dominique-dunning-0b27037a/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                            <a href="https://github.com/niquedunning/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -144,8 +149,8 @@
                             <h4 class="text-uppercase m-0">Salvador Olivas</h4>
                             <hr class="my-4" />
                             <div class="small text-black-50">sal.olivas1989@gmail.com</div>
-                            <a href="https://www.linkedin.com/in/salvador-olivas-282242169"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
-                            <a href="https://github.com/solivas89/"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/salvador-olivas-282242169" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                            <a href="https://github.com/solivas89/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -156,8 +161,8 @@
                             <h4 class="text-uppercase m-0">Dale Romero</h4>
                             <hr class="my-4" />
                             <div class="small text-black-50">dale.romero@gmail.com</div>
-                            <a href="https://www.linkedin.com/in/daleromero/"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
-                            <a href="https://github.com/chippen-dale"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/daleromero/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                            <a href="https://github.com/chippen-dale" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -168,13 +173,13 @@
                             <h4 class="text-uppercase m-0">Nabeel Sheikh</h4>
                             <hr class="my-4" />
                             <div class="small text-black-50">nabi.sheikh23@gmail.com</div>
-                            <a href="https://www.linkedin.com/in/nabeel--sheikh/"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
-                            <a href="https://github.com/nsheikh23"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/nabeel--sheikh/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                            <a href="https://github.com/nsheikh23" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
 {% endblock %}
