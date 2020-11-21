@@ -1,9 +1,8 @@
 # NCAA-Machine Learning
 #### -- Project status: [Active]
+The app can be accessed at: https://ncaa-ml.herokuapp.com/
 
 ![NCAA](FlaskAppAML/static/assets/img/header.jpg)
-
-The app can be accessed at: https://ncaa-ml.herokuapp.com/
 
 ## Project Objective
 The purpose of this project is to:
@@ -54,6 +53,9 @@ The purpose of this project is to:
 * Create a route on the app to allow user to access tables on PostgreSQL upon request.
 
 ## Data Sources
+* [Sports-Reference](http://sports-reference.com/)
+* [NBA Draft Combine Data](http://nbadraft.net/)
+* [Athletics Budget Data](https://ope.ed.gov/athletics/#/)
 
 ## Contributing Members
 
